@@ -9,14 +9,8 @@ SciNet LP RFP.
 3) Modify the environment appropriately to use the correct compiler and
    optimization flags for the system in question. Make sure the mpirun command is available.
    In the reference benchmark openmpi/4.1.4 was compiled with gcc/11.3.0 and cmake/3.22.5.
-   Build NekRS:
-
-    cd nekRS-23.0
-    mkdir -p build
-    cd build
-    cmake -Wfatal-errors -DCMAKE_INSTALL_PREFIX=/path/to/nekrs-install ..
-    make -j 8
-    make install 
+   There is a list of commands that were run to build NekRS on Niagara in the "build_nekrs.sh"
+   file.
 
 4) In the benchmark directory of LP_NekRS run:
 
