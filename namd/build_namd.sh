@@ -1,7 +1,8 @@
+#!/bin/bash
+ml NiaEnv/2022a gcc openmpi cmake
 tar xaf NAMD_3.0b6_Source.tar.gz  
 cd NAMD_3.0b6_Source
 tar xaf charm-7.0.0.tar 
-ml NiaEnv/2022a gcc openmpi cmake
 cd charm-v7.0.0
 env MPICXX=mpicxx ./build charm++ mpi-linux-x86_64 --with-production
 cd ..
