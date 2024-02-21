@@ -10,6 +10,6 @@ module load NiaEnv/2022a
 module load gcc/11.3.0
 module load openmpi/4.1.4+ucx-1.11.2
 module load cmake
-export NEKRS_HOME=/scratch/s/scinet/willis2/reframe/niagara/mpi/NiaEnv_2022a-gcc_1130-openmpi_414-ucx-1112/NekRSTest_9b49ff3f/nekrs-install
+export NEKRS_HOME=/scratch/s/scinet/willis2/rfp/RFP-Benchmark-Suite/nekrs/nekrs-install
 export PATH=$PATH:$NEKRS_HOME/bin
 mpirun -np $SLURM_NTASKS nekrs --setup turbChannel.par --backend CPU
