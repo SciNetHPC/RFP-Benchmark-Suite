@@ -3,8 +3,8 @@ module load cmake/3.27.8 # min 3.18.4 required
 module load gcc/12.3.0
 module load cuda/12.3.1
 
-mkdir gromacs_installation
-cd gromacs_installation
+mkdir ~/gromacs_installation
+cd ~/gromacs_installation
 
 wget https://ftp.gromacs.org/pub/gromacs/gromacs-2024.tar.gz
 
