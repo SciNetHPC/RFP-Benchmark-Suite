@@ -28,6 +28,8 @@ The following X (X) application benchmarks make up the Large Parallel Benchmark 
 
 # Quantum Espresso
 
+- [Quantum Espresso](https://www.quantum-espresso.org) is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.
+
 # MLPerf Training BERT-large (for Flash Attention)
 
 # Alphafold
