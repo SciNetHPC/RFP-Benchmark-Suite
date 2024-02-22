@@ -29,6 +29,6 @@ make -j 128
 make -j 128 check
 make install
 
-export $gmx="$HOME/software/gromacs/bin/gmx"
+export gmx="$HOME/software/gromacs/bin/gmx"
 
 $gmx
