@@ -1,0 +1,47 @@
+MLPerf Benchmark (part of LPBM)
+===============================
+
+Instructions for performing the Machine Learning benchmark, as part of the 
+SciNet LP RFP.
+
+This benchmark is based on the MLPerf Training Benchmark Suite (closed 
+division). The tasks are:
+
+1) Image classification: training of the ResNet-50 
+v1.5 model on the ImageNet dataset to a quality target of 75.90% classification. 
+2) Natural language processing: training of the BERT-large model on the 
+Wikipedia 2020/01/01 dataset to a quality target of 0.72 Mask-LM accuracy.
+
+In both cases, exactly 16 GPU accelerators are to be used, and any number of CPU 
+cores.
+
+Proponents may use their own implementations of the benchmarks under the rules 
+of the closed division, or choose to use the reference implementation[1]. In 
+case of a custom implementation, it is still necessary to consult the reference 
+implementation as explained in the training rules document[2].
+
+The image classification task requires a minimum of 5 runs, while the natural 
+language processing task requires a minimum of 10 runs. The latency for each 
+task separately is computed by dropping the fastest run and slowest run, then 
+taking the mean of the remaining times. More details are found in the training 
+rules document[2].
+
+The effective score for this benchmark is calculated using the following 
+formula:
+
+score = 7.19/R + 9.05/B
+
+where R is the latency in minutes of the image classification task (ResNet) and 
+B is the latency in minutes of the natural language processing task (BERT). 
+Higher score is better.
+
+Other than the instructions above regarding the effective score, in the event of 
+a conflict or inconsistency between the training rules document[2] and this 
+document, the training rules document will prevail to the extent of the conflict 
+or inconsistency.
+
+All modified source code, output logs, and solution files are to be provided in 
+with the response.
+
+[1] https://github.com/mlcommons/training
+[2] https://github.com/mlcommons/training_policies/blob/6e668456e5ba6f10f01544dd23901c7239ea07cb/training_rules.adoc

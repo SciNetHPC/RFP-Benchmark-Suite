@@ -43,8 +43,11 @@ sbatch run_benchmark_job.sh
 
 - [Quantum Espresso](https://www.quantum-espresso.org) is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.
 
-# MLPerf Training BERT-large (for Flash Attention)
+# MLPerf
+- [MLPerf](https://mlcommons.org/) is an industry-standard benchmark suite for measuring the performance of machine learning tasks.
+- It is developed by MLCommons, a consortium of AI leaders from academia, research labs, and industry.
+- The benchmark measures how fast a system can train models to a target quality metric.
+- LPBM specific instructions can be found in the [mlperf](mlperf) directory.
 
-# Alphafold
 
 # SPEC MPI 2007 version 2.0.1, Large version
