@@ -3,6 +3,9 @@ module load cmake/3.27.8 # min 3.18.4 required
 module load gcc/12.3.0
 module load cuda/12.3.1
 
+# extract the gromacs file
+tar -xzf topol.tar.gz
+
 mkdir ~/gromacs_installation
 cd ~/gromacs_installation
 
@@ -24,11 +27,6 @@ cmake .. \
     -DGMX_OPENMP=ON \
     -DGMX_GPU=CUDA
 
-# on balam
 make -j 128
 make -j 128 check
 make install
-
-export gmx="$HOME/software/gromacs/bin/gmx"
-
-$gmx
