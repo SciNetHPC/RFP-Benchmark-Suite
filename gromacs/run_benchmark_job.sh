@@ -13,6 +13,8 @@ nvidia-smi
 
 export gmx="$HOME/gromacs/bin/gmx"
 
+export GMX_ENABLE_DIRECT_GPU_COMM=1
+
 $gmx mdrun -ntmpi 8 -ntomp 16 -nb gpu -pme gpu -npme 1 -update gpu -bonded gpu -nsteps 100000 -resetstep 90000 -noconfout -dlb no -nstlist 300 -pin on -v -gpu_id 0123
 
 grep Performance md.log
