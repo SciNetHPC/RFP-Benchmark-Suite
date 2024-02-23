@@ -25,6 +25,18 @@ The following X (X) application benchmarks make up the Large Parallel Benchmark 
 # WRF
 
 # GROMACS (GPU)
+- [GROMACS](https://www.gromacs.org/) (GROningen MAchine for Chemical Simulations) is a versatile package used primarily for molecular dynamics simulations of biomolecules, such as proteins, lipids, and nucleic acids. It is designed to perform simulations of large biomolecular systems with high efficiency on CPUs, GPUs, and specialized hardware. GROMACS provides a wide range of functionalities for simulating molecular systems, including energy minimization, molecular dynamics simulations, free energy calculations, and analysis tools for studying the dynamics and properties of biomolecules at the atomic level. It is widely used in various fields such as biochemistry, biophysics, pharmaceutical research, and materials science.
+
+## Installation
+```
+cd gromacs
+sh build_gromacs.sh
+```
+
+## Benchmarking
+```
+sbatch run_benchmark_job.sh
+```
 
 # Quantum Espresso
 
