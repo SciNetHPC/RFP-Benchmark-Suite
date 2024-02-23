@@ -7,8 +7,9 @@ SciNet LP RFP.
 This benchmark is based on the MLPerf Training Benchmark Suite (closed 
 division). The tasks are:
 
-1) Image classification: training of the ResNet-50 
-v1.5 model on the ImageNet dataset to a quality target of 75.90% classification. 
+1) Image classification: training of the ResNet-50 v1.5 model on the ImageNet 
+dataset to a quality target of 75.90% classification.
+
 2) Natural language processing: training of the BERT-large model on the 
 Wikipedia 2020/01/01 dataset to a quality target of 0.72 Mask-LM accuracy.
 
