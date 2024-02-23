@@ -7,7 +7,8 @@ The following X (X) application benchmarks make up the Large Parallel Benchmark 
 # HPCG
 - The High Performance Conjugate Gradients [HPCG](https://www.hpcg-benchmark.org/) benchmark is designed to exercise computational and data access patterns that closely match a broad set of important scientific applications, and to give incentive to computer system designers to invest in capabilities that will have impact on the collective performance of these applications. 
 - HPCG is an open source benchmark developed by Mike Heroux, Jack Dongarra and Piotr Luszcze. 
-- Source and LPBM specific instructions can be found in the [hpcg](hpcg) directory.
+- The source code can be downloaded [here](https://github.com/hpcg-benchmark/hpcg/archive/refs/tags/HPCG-release-3-1-0.tar.gz). (md5sum: bebe50185b365daf7b6b60f26ef3a390)
+- LPBM specific instructions can be found in the [hpcg](hpcg) directory.
 
 # NekRS
 - [NekRS](https://nek5000.mcs.anl.gov/) is an open source, fast and highly scalable computational fluid dynamics (CFD) solver targeting HPC applications.
