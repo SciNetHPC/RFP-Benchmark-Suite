@@ -29,38 +29,56 @@ How to Run the Benchmark
     https://www.ks.uiuc.edu/Development/Download/download.cgi
 
     there is a list of commands that were run to build NAMD on Niagara 
-    in the "build_namd.sh" file.
+    in the "build_namd.sh" file. Note two versions (--with-memopt and without) 
+    need to be compiled in order to generate and run the input files.
  
- 4. The benchmark input files can be downloaded from
+ 4. The benchmark input files are from http://www.ks.uiuc.edu/Research/namd/benchmarks/ and
+    can be downloaded from
 
       http://www.ks.uiuc.edu/Research/namd/utilities/stmv.tar.gz.  
 
-    This file can also be found in this benchmark directory, under
-    "benchmark/stmv.tar.gz". 
+    and
 
-    When untarred, this produces a directory stmv from which the run
-    should be performed, containing the following files:
+      http://www.ks.uiuc.edu/Research/namd/utilities/stmv_sc14.tar.gz
+
+    These files can also be found in the benchmark directory, under
+    "benchmark/stmv.tar.gz" and "benchmark/stmv_sc14.tar.gz". 
+
+    Untar both files and copy all of the files from the stmv directory:
 
       par_all27_prot_na.inp
       stmv.pdb
       stmv.psf
       stmv.namd 
+ 
+    into the stmv_sc14 directory.
+
+ 5. To generate the inputs first generate multiple copies of the STMV 
+    structure by running in the stmv_sc14 directory:
+
+    $NAMD_BIN_WITHOUT_MEMOPT/psfgen make_210stmv.pgn 
+
+    then compress the STMV structure with:
+
+    $NAMD_BIN_WITHOUT_MEMOPT/namd3 compress_210stmv
+
+    more instructions can be found in the README file inside the stmv_sc14.
 
  5. IMPORTANT: increase the "numsteps" parameter (the last parameter
-    in the configuration file "stmv/stmv.namd") from 500 to get
+    in the configuration file "stmv_sc14/210stmv2fs.namd") from 1200 to get
     adequate sampling of runtimes. For example the reference benchmark 
-    on Niagara was ran for 500000 steps.
+    on Niagara was ran for 3600 steps.
 
  6. To run the benchmark, execute
 
-    $NAMD_BIN/charmrun ++p $NCORES $NAMD_BIN/namd3 $PWD/stmv.namd 
+    $NAMD_BIN_WITH_MEMOPT/charmrun ++p $NCORES $NAMD_BIN/namd3 $PWD/210stmv2fs.namd 
 
-    Here, $NAMD_BIN should be the directory containing the namd binary
-    and related utilities, and $NCORES should be the number of
-    parallel processes to use. $NCORES should be set such that the
-    number of processes is equal to the number of nodes used times the
-    number of cores per node, subject to the constraints that: the 
-    number of nodes is at least 100.
+    Here, $NAMD_BIN_WITH_MEMOPT should be the directory containing the namd binary
+    and related utilities compiled with memory optimisation, and 
+    $NCORES should be the number of parallel processes to use. $NCORES 
+    should be set such that the number of processes is equal to the number of 
+    nodes used times the number of cores per node, subject to the constraints that: 
+    the number of nodes is at least 100.
 
     The above command line assumes that mpi has been setup such that
     mpirun will launch on a set number of nodes, with as many
@@ -71,6 +89,11 @@ How to Run the Benchmark
     Note a SLURM script has been included in the benchmark directory
     called "submit.slurm" that was used to run the reference benchmark
     on Niagara.
+    
+    More instructions can be found in the README file inside the stmv_sc14 directory.
+
+    Note the benchmark problem size fits on a minimum of 8 nodes of Niagara 
+    at ~130GB memory usage per node.
 
  7. The code will automatically report the value of the number of
     nanoseconds simulated per walltime day (ns/day).
