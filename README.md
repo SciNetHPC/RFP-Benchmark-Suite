@@ -2,7 +2,7 @@
 Benchmarks required for the 2024 University of Toronto Large Parallel System procurement. The benchmark sources and specific run instructions are provided for each of the benchmarks below. Information on baseline, optimization and reporting of the benchmark scores is described in Schedule 1 of the procurement document.
 
 # Large Parallel Benchmark (LPBM)
-The following X (X) application benchmarks make up the Large Parallel Benchmark (LPBM). Each benchmark includes the source codes or download links to source code, benchmark run requirements and the instructions for reporting results.
+The following 8 application benchmarks make up the Large Parallel Benchmark (LPBM). Each benchmark includes the source codes or download links to source code, benchmark run requirements and the instructions for reporting results.
 
 # HPCG
 - The High Performance Conjugate Gradients [HPCG](https://www.hpcg-benchmark.org/) benchmark is designed to exercise computational and data access patterns that closely match a broad set of important scientific applications, and to give incentive to computer system designers to invest in capabilities that will have impact on the collective performance of these applications. 
