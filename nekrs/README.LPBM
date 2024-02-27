@@ -17,12 +17,10 @@ SciNet LP RFP.
     export NEKRS_HOME=/path/to/nekrs-install
     export PATH=$PATH:$NEKRS_HOME/bin
     
-    mpirun -np NUM_PROCS nekrs --setup turbChannel.par --backend BACKEND
+    mpirun -np NUM_PROCS nekrs --setup turbChannel.par --backend CPU
     
    where NUM_PROCS corresponds to the number of MPI
-   processes being launched and BACKEND can be [CPU|CUDA|HIP|DPCPP|OPENCL] 
-   depending on which architecture is being used. "--map-by ppr:NUM_GPUS_PER_NODE:node" will 
-   need to be added as an mpirun argument when running on multiple GPU nodes. An example SLURM
+   processes being launched. It should be run on at least 100 nodes. An example SLURM
    script is provided, "submit.slurm" that was used to produce the reference benchmark on Niagara.
    CMake is also needed at runtime for the JIT compilation phase.
 
