@@ -60,11 +60,11 @@ require the longer, 1800 second base run.
 
 Global Problem Size Definition:
 
-LPBM Size - 560 4320 7520
+LPBM Reference Size - 560 4320 7520 (minimum global mesh size)
 Full System Size - minimum 1/4 system memory 
 
 Mapping of MPI ranks to nodes or global mesh decomposition over nodes can be modifed by
-the user as required but the final mesh must meet the size above exactly.
+the user as required but the final mesh must meet the requirements above.
 
 An example SLURM submission script (submit.slurm) used on Niagara is provided as a reference.
 
