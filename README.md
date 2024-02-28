@@ -22,14 +22,14 @@ The following 8 application benchmarks make up the Large Parallel Benchmark (LPB
 - NAMD is Licensed under the [University of Illinois NAMD Molecular Dynamics Software Non-Exclusive, Non-Commercial Use License](http://www.ks.uiuc.edu/Research/namd/license.html)
 - NAMD version 3.0b6  source, and/or binary packages, must be obtained directly from the Theoretical and Computational Biophysics Group at UIUC [here](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD).
 - The benchmark to be used is the simulation of the "Satellite Tobacco Mosaic Virus" found [here](http://www.ks.uiuc.edu/Research/namd/utilities/).
-- LPBM specific instructions and input files can be in the [namd](namd) directory.
+- LPBM specific instructions and input files can be found in the [namd](namd) directory.
 - The reported NAMD benchmark results must be run on a minimum of 100 nodes.
 
 # WRF
 - The Weather Research and Forecasting (WRF) Model is a next-generation mesoscale numerical weather prediction system designed for both atmospheric research and operational forecasting needs.
 - WRF is public domain, details [here](https://www.mmm.ucar.edu/models/wrf).
 - Source can be downloaded [here](https://github.com/wrf-model/WRF/releases).
-- LPBM specific instructions and input files can be in the [wrf](wrf) directory.
+- LPBM specific instructions and input files can be found in the [wrf](wrf) directory.
 - The reported WRF benchmark results must be run on a minimum of 100 nodes
   
 # GROMACS (GPU)
