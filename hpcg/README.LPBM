@@ -30,9 +30,9 @@ cd hpcg-HPCG-release-3-1-0
 
 (3) Create an architecture reference file in the setup directory. Examples are provided
 for Linux platforms with MPI and OpenMP using a variety of compilers. For instance, name
-this file Make.Linux_LPBM.
+this file Make.Linux_LP2BM.
 
-(4) In the Makefile in the base directory modify the arch = variable to state Linux_LPBM.
+(4) In the Makefile in the base directory modify the arch = variable to state Linux_LP2BM.
 
 (5) Run make
 
@@ -50,7 +50,7 @@ HPCG takes the problem size definition from command line arguments:
 The "nx", "ny" and "nz" variables define the problem size per MPI rank and "rt" value specifies 
 how long the benchmark should execute for. 
 
-The base LPBM reference mesh size per MPI rank has been defined at: 56 216 376. The
+The base LP2BM reference mesh size per MPI rank has been defined at: 56 216 376. The
 output of HPCG describes the global mesh size which takes the per-node mesh size and rank
 decomposition to calculate the global sizes. Weak scaling is used to increase the size of
 the mesh. A "rt" value of 1800 must be used for the benchmark to report a valid result in
@@ -60,7 +60,7 @@ require the longer, 1800 second base run.
 
 Global Problem Size Definition:
 
-LPBM Reference Size - 560 4320 7520 (minimum global mesh size)
+LP2BM Reference Size - 560 4320 7520 (minimum global mesh size)
 Full System Size - minimum 1/4 system memory 
 
 Mapping of MPI ranks to nodes or global mesh decomposition over nodes can be modifed by
@@ -75,7 +75,7 @@ summaries of the data, e.g. HPCG-Benchmark_3.1_2024-02-14_15-18-20.txt. In the "
 section located at the bottom of the YAML file is a GFLOP/s value. HPCG will also self report 
 a VALID or INVALID result. Only VALID results are to be provided in the RFP response.
 
-The GFLOP/s value in the Final Summary should be reported in the "HPCG" tab of the LPBM Schedule 1
+The GFLOP/s value in the Final Summary should be reported in the "HPCG" tab of the LP2BM Schedule 1
 spreadsheet.
 
 All modified source code, added Makefiles, output and .yaml files are to be provided in with the

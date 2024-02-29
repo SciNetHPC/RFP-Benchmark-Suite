@@ -1,8 +1,8 @@
-NAMD STMV Benchmark (part of LPBM)
+NAMD STMV Benchmark (part of LP2BM)
 ==================================
 
 These are the instructions for performing the NAMD part of the
-benchmarks for the SciNet LPBM required for the LP RFP.  This part of
+benchmarks for the SciNet LP2BM required for the LP RFP.  This part of
 the benchmark suite performs a molecular dynamics simulation of the
 "Satellite Tobacco Mosaic Virus, which is a virus composed of roughly
 1 million atoms.
@@ -102,7 +102,7 @@ How to Run the Benchmark
     take the geometric mean of these benchmark numbers for the
     benchmark, and report the value nanoseconds per day. 
     The nanoseconds per day value should be reported in the "NAMD"
-     tab of the LPBM Schedule 1 spreadsheet.
+     tab of the LP2BM Schedule 1 spreadsheet.
 
  8.  All modified source code, Makefiles, output and solution files are 
      to be provided in with the response.

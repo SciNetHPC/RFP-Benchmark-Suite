@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name="LPBM_NekRS"
+#SBATCH --job-name="LP2BM_NekRS"
 #SBATCH --ntasks-per-node=40
-#SBATCH --output=LPBM_NekRS_job_%j.out
-#SBATCH --error=LPBM_NekRS_job_%j.err
+#SBATCH --output=LP2BM_NekRS_job_%j.out
+#SBATCH --error=LP2BM_NekRS_job_%j.err
 #SBATCH --time=90:00
 #SBATCH --account=scinet
 #SBATCH --nodes=100

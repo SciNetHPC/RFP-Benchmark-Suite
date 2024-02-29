@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name="HPCG_LPBM"
+#SBATCH --job-name="HPCG_LP2BM"
 #SBATCH --ntasks-per-node=40
-#SBATCH --output=HPCG_LPBM_job.out
-#SBATCH --error=HPCG_LPBM_job.err
+#SBATCH --output=HPCG_LP2BM_job.out
+#SBATCH --error=HPCG_LP2BM_job.err
 #SBATCH --time=01:00:00
 #SBATCH --account=scinet
 #SBATCH --nodes=100

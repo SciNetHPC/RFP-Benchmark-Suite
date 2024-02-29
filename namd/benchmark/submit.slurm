@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name="LPBM_NAMD"
+#SBATCH --job-name="LP2BM_NAMD"
 #SBATCH --ntasks-per-node=40
-#SBATCH --output=LPBM_NAMD_%j.out
-#SBATCH --error=LPBM_NAMD_%j.err
+#SBATCH --output=LP2BM_NAMD_%j.out
+#SBATCH --error=LP2BM_NAMD_%j.err
 #SBATCH --time=01:00:00
 #SBATCH --account=scinet
 #SBATCH --nodes=100

@@ -36,7 +36,7 @@ the SciNet LP RFP.
 
 6) Note that the code will automatically calculate the running time of
    the code, and output these numbers. The "totalElapsed=" in seconds 
-   should be reported in the "QE" tab of the LPBM Schedule 1 spreadsheet.
+   should be reported in the "QE" tab of the LP2BM Schedule 1 spreadsheet.
 
 7) All modified source code, output logs, and solution files are to be
    provided in with the response.
