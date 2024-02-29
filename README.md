@@ -83,5 +83,3 @@ sbatch run_benchmark_job.sh
 - Please refer to their documentation site [here](https://www.spec.org/hpc2021/docs/overview.html) and installation guide [here](https://www.spec.org/hpc2021/docs/install-guide-linux.html).
 
 - Follow their run and reporting rules on this [link](https://www.spec.org/hpc2021/docs/runrules.html) and report back the scores for the base build along with the system description, configuration file and any other script setting the environment needed to reproduce the benchmark. 
-
-
