@@ -15,7 +15,7 @@ The following 8 application benchmarks make up the Large-Parallel Refresh System
 - Developed at Argonne National Laboratory, NekRS is released under the terms of the BSD 3-clause license.
 - The source code can be downloaded [here](https://github.com/Nek5000/nekRS/archive/refs/tags/v23.0.tar.gz). (md5sum: 475131966c187ccfda72f1a8a20ef36f)
 - LP2BM specific instructions can be found in the [nekrs](nekrs) directory.
-- The reported NekRS benchmark results must be run on a minimum of 100 nodes.
+- The reported NekRS benchmark results must be run on a minimum of 100 CPU nodes.
 
 # NAMD
 - [NAMD](http://www.ks.uiuc.edu/Research/namd/) is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems.
@@ -23,14 +23,14 @@ The following 8 application benchmarks make up the Large-Parallel Refresh System
 - NAMD version 3.0b6  source, and/or binary packages, must be obtained directly from the Theoretical and Computational Biophysics Group at UIUC [here](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD).
 - The benchmark to be used is the simulation of the "Satellite Tobacco Mosaic Virus" found [here](http://www.ks.uiuc.edu/Research/namd/utilities/).
 - LP2BM specific instructions and input files can be found in the [namd](namd) directory.
-- The reported NAMD benchmark results must be run on a minimum of 100 nodes.
+- The reported NAMD benchmark results must be run on a minimum of 100 CPU nodes.
 
 # WRF
 - The Weather Research and Forecasting (WRF) Model is a next-generation mesoscale numerical weather prediction system designed for both atmospheric research and operational forecasting needs.
 - WRF is public domain, details [here](https://www.mmm.ucar.edu/models/wrf).
 - Source can be downloaded [here](https://github.com/wrf-model/WRF/releases).
 - LP2BM specific instructions and input files can be found in the [wrf](wrf) directory.
-- The reported WRF benchmark results must be run on a minimum of 100 nodes
+- The reported WRF benchmark results must be run on a minimum of 100 CPU nodes
   
 # GROMACS (GPU)
 - [GROMACS](https://www.gromacs.org/) (GROningen MAchine for Chemical Simulations) is a versatile package used primarily for molecular dynamics simulations of biomolecules, such as proteins, lipids, and nucleic acids. It is designed to perform simulations of large biomolecular systems with high efficiency on CPUs, GPUs, and specialized hardware. GROMACS provides a wide range of functionalities for simulating molecular systems, including energy minimization, molecular dynamics simulations, free energy calculations, and analysis tools for studying the dynamics and properties of biomolecules at the atomic level. It is widely used in various fields such as biochemistry, biophysics, pharmaceutical research, and materials science.
@@ -50,7 +50,7 @@ sbatch run_benchmark_job.sh
 # Quantum Espresso
 
 - [Quantum Espresso](https://www.quantum-espresso.org) is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.
-- The reported Quantum Espresso benchmark results must be run on a minimum of 100 nodes.
+- The reported Quantum Espresso benchmark results must be run on a minimum of 100 CPU nodes.
 
 # MLPerf
 - [MLPerf](https://mlcommons.org/) is an industry-standard benchmark suite for measuring the performance of machine learning tasks.
