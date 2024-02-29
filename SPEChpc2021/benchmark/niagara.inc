@@ -10,27 +10,27 @@ sw_avail           = Mar-2018
 
 # Computation node info 
 # [Node_Description: Hardware]
-node_compute_syslbl = TurboBlaster 5000
+node_compute_syslbl = Intel Xeon Gold 6148
 node_compute_order = 1
 node_compute_count = 2
 node_compute_purpose = compute
 node_compute_hw_vendor = Lenovo
-node_compute_hw_model = Turblaster 5000
-node_compute_hw_cpu_name = Turbo CPU
+node_compute_hw_model = Intel Xeon Gold 6148
+node_compute_hw_cpu_name = Intel Xeon Gold 6148
 node_compute_hw_ncpuorder = 1 chips
-node_compute_hw_nchips = 1
-node_compute_hw_ncores = 64
-node_compute_hw_ncoresperchip = 64
-node_compute_hw_nthreadspercore = 1
-node_compute_hw_cpu_char = Turbo up to 3.4 GHz
-node_compute_hw_cpu_mhz = 2250
+node_compute_hw_nchips = 2
+node_compute_hw_ncores = 40
+node_compute_hw_ncoresperchip = 20
+node_compute_hw_nthreadspercore = 40
+node_compute_hw_cpu_char = Turbo up to 3.7 GHz
+node_compute_hw_cpu_mhz = 2400
 node_compute_hw_pcache = 32 KB I + 32 KB D on chip per core
 node_compute_hw_scache = 512 KB I+D on chip per core
 node_compute_hw_tcache000= 256 MB I+D on chip per chip
 node_compute_hw_tcache001 = 16 MB shared / 4 cores
 node_compute_hw_ocache = None
-node_compute_hw_memory = 256 GB (8 x 32 GB 2Rx8 PC4-3200AA-R)
-node_compute_hw_disk = 1 x 480 GB  SATA 2.5" SSD
+node_compute_hw_memory = 202 GB (8 x 32 GB 2Rx8 PC4-3200AA-R)
+node_compute_hw_disk = None
 node_compute_hw_other = None
 
 #[Node_Description: Accelerator]
