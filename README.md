@@ -61,3 +61,17 @@ sbatch run_benchmark_job.sh
 
 # SPEC MPI 2007 version 2.0.1, Large version
 - The reported SPEC MPI benchmark results must be run on the closest number of whole nodes to achieve 2048 MPI ranks.
+
+# SPEChpc 2021 Large Workload
+
+- The Standard Performance Evaluation Corporation [SPEC](https://www.spec.org/) is a non-profit consortium that establishes, maintains and endorses standardized benchmarks and tools to evaluate performance for the newest generation of computing systems.
+
+- One of SPEC's benchmarks, [SPEChpc 2021 Benchmark Suites](https://www.spec.org/hpc2021/), provides a set of application benchmark suites using a comprehensive measure of real-world performance for the state-of-the-art HPC systems. They offer well-selected science and engineering codes that are representative of HPC workloads and are portable across CPU and accelerators, along with certain fair comparative performance metrics.  
+
+- To download the SPEChpc 2021 Benchmark Suites please register at its website [https://www.spec.org/hpc2021/](https://www.spec.org/hpc2021/).
+
+- Please refer to their documentation site [here](https://www.spec.org/hpc2021/docs/overview.html) and installation guide [here](https://www.spec.org/hpc2021/docs/install-guide-linux.html).
+
+- Follow their run and reporting rules on this [link](https://www.spec.org/hpc2021/docs/runrules.html) and report back the scores for the base build along with the system description, configuration file and any other script setting the environment needed to reproduce the benchmark. 
+
+
