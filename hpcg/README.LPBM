@@ -75,7 +75,7 @@ summaries of the data, e.g. HPCG-Benchmark_3.1_2024-02-14_15-18-20.txt. In the "
 section located at the bottom of the YAML file is a GFLOP/s value. HPCG will also self report 
 a VALID or INVALID result. Only VALID results are to be provided in the RFP response.
 
-The GFLOP/s value in the Final Summary should be reported in the "HPCG" tab of the LP2BM Schedule 1
+The GFLOP/s value in the Final Summary should be reported in the "HPCG" tab of the LP2BM Schedule G
 spreadsheet.
 
 All modified source code, added Makefiles, output and .yaml files are to be provided in with the

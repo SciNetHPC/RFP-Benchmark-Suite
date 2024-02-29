@@ -102,7 +102,7 @@ How to Run the Benchmark
     take the geometric mean of these benchmark numbers for the
     benchmark, and report the value nanoseconds per day. 
     The nanoseconds per day value should be reported in the "NAMD"
-     tab of the LP2BM Schedule 1 spreadsheet.
+     tab of the LP2BM Schedule G spreadsheet.
 
  8.  All modified source code, Makefiles, output and solution files are 
      to be provided in with the response.

@@ -28,7 +28,7 @@ SciNet LP RFP.
 
 6) Note that the code will automatically calculate the running time of
    the code, and output these numbers. The "totalElapsed=" in seconds 
-   should be reported in the "NekRS" tab of the LP2BM Schedule 1 spreadsheet.
+   should be reported in the "NekRS" tab of the LP2BM Schedule G spreadsheet.
 
 7) Note that the code may fail at runtime during the JIT kernel compilation phase if switching
    between architectures. Try removing the .cache directory generated in the benchmark directory.

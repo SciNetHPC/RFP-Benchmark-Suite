@@ -1,5 +1,5 @@
 # Benchmark Guidelines
-Benchmarks required for the 2024 University of Toronto Large-Parallel Refresh (LP2) System procurement. The benchmark sources and specific run instructions are provided for each of the benchmarks below. Information on baseline, optimization and reporting of the benchmark scores is described in Schedule 1 of the procurement document.
+Benchmarks required for the 2024 University of Toronto Large-Parallel Refresh (LP2) System procurement. The benchmark sources and specific run instructions are provided for each of the benchmarks below. Information on baseline, optimization and reporting of the benchmark scores is described in Schedule G of the procurement document.
 
 # Large-Parallel Refresh System Benchmark (LP2BM)
 The following 8 application benchmarks make up the Large-Parallel Refresh System Benchmark (LP2BM). Each benchmark includes the source codes or download links to source code, benchmark run requirements and the instructions for reporting results.
