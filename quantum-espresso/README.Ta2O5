@@ -1,5 +1,5 @@
 Instructions for performing the Quantum-Espresso benchmark, as part of
-the SciNet LP RFP.
+the SciNet LP2 RFP.
 
 1) Download source code from:
    https://gitlab.com/QEF/q-e/-/archive/qe-7.3/q-e-qe-7.3.tar.gz
@@ -43,7 +43,7 @@ the SciNet LP RFP.
    the code, and output these numbers.  The final output line which
    reads "total cpu time spent up to now is" (the line just before
    "End of self-consistent calculation"), in seconds, should be
-   reported in the "QE" tab of the LPBM Schedule 1 spreadsheet.
+   reported in the "QE" tab of the LPBM Schedule G spreadsheet.
 
 7) All modified source code, output logs, and solution files are to be
    provided in with the response.
