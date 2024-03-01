@@ -59,19 +59,6 @@ sbatch run_benchmark_job.sh
 - LP2BM specific instructions can be found in the [mlperf](mlperf) directory.
 - The reported MLPerf benchmark results must be run on a minimum of 16 GPUs.
 
-# SPEC MPI 2007 version 2.0.1, Large version
-- The Standard Performance Evaluation Corporation [SPEC](https://www.spec.org/) is a non-profit consortium that establishes, maintains and endorses standardized benchmarks and tools to evaluate performance for the newest generation of computing systems.
-
-- One of SPEC's benchmarks, [SPEC MPI 2007](https://www.spec.org/mpi2007/), provides a set of application benchmark suites for evaluating MPI-parallel, floating point, compute intensive performance across a wide range of cluster and SMP hardware. 
-
-- To download the SPEC MPI 2007 please register at its website [https://www.spec.org/mpi2007](https://www.spec.org/mpi2007/).
-
-- Please refer to their documentation site [here](https://www.spec.org/mpi2007/Docs/) and installation guide [here](https://www.spec.org/mpi2007/Docs/install-guide-unix.html).
-
-- Follow their run and reporting rules on this [link](https://www.spec.org/mpi2007/Docs/runrules.html) and report back the scores for the base build along with the system description, configuration file and any other script setting the environment needed to reproduce the benchmark. 
-
-- The reported SPEC MPI benchmark results must be run on the closest number of whole nodes to achieve 8192 MPI ranks.
-
 # SPEChpc 2021 Large Workload
 
 - The Standard Performance Evaluation Corporation [SPEC](https://www.spec.org/) is a non-profit consortium that establishes, maintains and endorses standardized benchmarks and tools to evaluate performance for the newest generation of computing systems.
