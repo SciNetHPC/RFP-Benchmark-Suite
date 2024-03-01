@@ -1,0 +1,68 @@
+-------------------STARTING SIMULATION--------------------
+Thu Feb 22 15:41:28 EST 2024
+
+mpirun /bb/path/to/ior/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/bin/ior -vv -o /bb/path/to/ior/runs/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/ior2/datafiles/ior_test -l=random -M=70% -a=mpiio --mpiio.useFileView -b=8g -t=16m -i=2 -g -d=10 -e -C -Q=40
+
+IOR-4.0.0: MPI Coordinated Test of Parallel I/O
+Began               : Thu Feb 22 15:41:29 2024
+Command line        : /bb/path/to/ior/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/bin/ior -vv -o /bb/path/to/ior/runs/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/ior2/datafiles/ior_test -l=random -M=70% -a=mpiio --mpiio.useFileView -b=8g -t=16m -i=2 -g -d=10 -e -C -Q=40
+Machine             : Linux nia1621.scinet.local 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64
+TestID              : 0
+StartTime           : Thu Feb 22 15:41:29 2024
+Path                : /bb/path/to/ior/runs/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/ior2/datafiles/ior_test
+FS                  : 231.7 TiB   Used FS: 67.1%   Inodes: 786.0 Mi   Used Inodes: 44.5%
+Participating tasks : 2880
+Using reorderTasks '-C' (useful to avoid read cache in client)
+
+Options: 
+api                 : mpiio
+apiVersion          : (3.1)
+test filename       : /bb/path/to/ior/runs/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/ior2/datafiles/ior_test
+access              : single-shared-file
+type                : independent
+segments            : 1
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 40
+nodes               : 72
+tasks               : 2880
+clients per node    : 40
+memoryPerNode       : 131.99 GiB
+repetitions         : 2
+xfersize            : 16 MiB
+blocksize           : 8 GiB
+aggregate filesize  : 22.50 TiB
+verbose             : 2
+
+Results: 
+Using Time Stamp 1708634490 (0x65d7b17a) for Data Signature
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Commencing write performance test: Thu Feb 22 15:41:53 2024
+write     49720      3193.49    0.900687    8388608    16384      12.74      461.74     0.040507   474.52     0   
+delaying 10 seconds . . .
+Commencing read performance test: Thu Feb 22 15:49:45 2024
+
+read      49060      3068.17    0.861098    8388608    16384      0.281886   480.60     0.023312   480.90     0   
+remove    -          -          -           -          -          -          -          -          0.152802   0   
+Using Time Stamp 1708635466 (0x65d7b54a) for Data Signature
+delaying 10 seconds . . .
+Commencing write performance test: Thu Feb 22 15:58:10 2024
+write     45583      2929.22    0.982699    8388608    16384      13.96      503.40     0.225212   517.58     1   
+delaying 10 seconds . . .
+Commencing read performance test: Thu Feb 22 16:06:45 2024
+
+read      48029      3003.58    0.823956    8388608    16384      0.268606   490.93     0.019987   491.22     1   
+remove    -          -          -           -          -          -          -          -          0.206369   1   
+Max Write: 49719.68 MiB/sec (52134.86 MB/sec)
+Max Read:  49059.96 MiB/sec (51443.09 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev   Max(OPs)   Min(OPs)  Mean(OPs)     StdDev    Mean(s) Stonewall(s) Stonewall(MiB) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt   blksiz    xsize aggs(MiB)   API RefNum
+write       49719.68   45583.23   47651.46    2068.23    3107.48    2848.95    2978.22     129.26  496.04968         NA            NA     0   2880  40    2   0     1       40         0    0      1 8589934592 16777216 23592960.0 mpiio      0
+read        49059.96   48029.38   48544.67     515.29    3066.25    3001.84    3034.04      32.21  486.05993         NA            NA     0   2880  40    2   0     1       40         0    0      1 8589934592 16777216 23592960.0 mpiio      0
+Finished            : Thu Feb 22 16:14:56 2024
+-------------------ENDING SIMULATION--------------------
+Thu Feb 22 16:14:57 EST 2024
