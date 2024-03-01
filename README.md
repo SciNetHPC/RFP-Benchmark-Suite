@@ -70,7 +70,7 @@ sbatch run_benchmark_job.sh
 
 - Follow their run and reporting rules on this [link](https://www.spec.org/mpi2007/Docs/runrules.html) and report back the scores for the base build along with the system description, configuration file and any other script setting the environment needed to reproduce the benchmark. 
 
-- The reported SPEC MPI benchmark results must be run on the closest number of whole nodes to achieve 2048 MPI ranks.
+- The reported SPEC MPI benchmark results must be run on the closest number of whole nodes to achieve 8192 MPI ranks.
 
 # SPEChpc 2021 Large Workload
 
