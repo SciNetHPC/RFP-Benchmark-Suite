@@ -1,0 +1,45 @@
+
+scontrol show job 12238944
+JobId=12238944 JobName=Ausurf_QE
+   UserId=ejspence(3015931) GroupId=scinet(2000000) MCS_label=N/A
+   Priority=3854110 Nice=0 Account=scinet QOS=bigprio
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=02:15:31 TimeLimit=1-00:00:00 TimeMin=N/A
+   SubmitTime=2024-02-28T13:46:39 EligibleTime=2024-02-28T13:46:39
+   AccrueTime=2024-02-28T13:46:39
+   StartTime=2024-02-28T15:39:34 EndTime=2024-02-28T17:55:05 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2024-02-28T15:39:34 Scheduler=Main
+   Partition=compute AllocNode:Sid=nia-login06:33297
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[0013-0014,0021-0023,0035-0038,0041-0042,0045,0048,0050-0051,0057,0061,0063,0067,0072,0091,0093,0103,0107,0112,0117-0118,0120-0121,0125,0127-0129,0137,0139,0142,0144,0157,0163,0165-0168,0171,0173-0174,0185-0186,0196,0199,0202,0209,0216,0239-0240,0244-0246,0252,0255,0262,0264-0265,0268,0270-0271,0278,0281,0283,0290,0311,0314,0326,0330,0335,0337,0340,0342,0345,0347,0356,0358,0383,0389,0391,0393-0394,0398,0405-0406,0413-0414,0417-0419,0428,0488-0489,0494-0495]
+   BatchHost=nia0013
+   NumNodes=100 NumCPUs=8000 NumTasks=4000 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   ReqTRES=cpu=4000,mem=17500000M,node=100,billing=2000
+   AllocTRES=cpu=8000,mem=17500000M,node=100,billing=4000
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/s/scinet/ejspence/benchmarks/qe/tests/rel/test100/submit.slurm
+   WorkDir=/gpfs/fs0/scratch/s/scinet/ejspence/benchmarks/qe/tests/rel/test100
+   Comment=/opt/slurm/bin/sbatch submit.slurm 
+   StdErr=/gpfs/fs0/scratch/s/scinet/ejspence/benchmarks/qe/tests/rel/test100/Ausurf_QE_job_12238944.err
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/s/scinet/ejspence/benchmarks/qe/tests/rel/test100/Ausurf_QE_job_12238944.out
+   Power=
+   
+
+sacct -j 12238944
+JobID           JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+12238944      Ausurf_QE     scinet   02:15:31                       1-17:10:52 367-18:13+      0:0 
+12238944.ba+      batch     scinet   02:15:31   3778752K     14436K  00:00.549  00:00.622      0:0 
+12238944.ex+     extern     scinet   02:15:31    148752K      1100K  00:00.055  00:00.036      0:0 
+12238944.0         pw.x     scinet   02:15:08   2119028K   1368328K 1-17:10:51 367-18:13+      0:0 
+
+kernel messages produced during job executions:
+[Feb28 15:40] pw.x (26668): Using mlock ulimits for SHM_HUGETLB is deprecated
+[Feb28 15:56] perf: interrupt took too long (2507 > 2500), lowering kernel.perf_event_max_sample_rate to 79000
+[Feb28 16:00] perf: interrupt took too long (3152 > 3133), lowering kernel.perf_event_max_sample_rate to 63000
+[Feb28 16:20] fuse init (API version 7.23)
