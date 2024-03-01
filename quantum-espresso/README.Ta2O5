@@ -43,7 +43,7 @@ the SciNet LP2 RFP.
    the code, and output these numbers.  The final output line which
    reads "total cpu time spent up to now is" (the line just before
    "End of self-consistent calculation"), in seconds, should be
-   reported in the "QE" tab of the LPBM Schedule G spreadsheet.
+   reported in the "QE" tab of the LP2BM Schedule G spreadsheet.
 
 7) All modified source code, output logs, and solution files are to be
    provided in with the response.
