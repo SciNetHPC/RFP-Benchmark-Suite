@@ -78,7 +78,7 @@ How to Run the Benchmark
     $NCORES should be the number of parallel processes to use. $NCORES 
     should be set such that the number of processes is equal to the number of 
     nodes used times the number of cores per node, subject to the constraints that: 
-    the number of nodes is at least 100.
+    the number of nodes is at least 50.
 
     The above command line assumes that mpi has been setup such that
     mpirun will launch on a set number of nodes, with as many
