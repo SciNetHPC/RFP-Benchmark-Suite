@@ -12,7 +12,7 @@ SciNet LP RFP.
    There is a list of commands that were run to build NekRS on Niagara in the "build_nekrs.sh"
    file.
 
-4) In the benchmark directory of LP_NekRS run:
+4) In the benchmark directory run:
 
     export NEKRS_HOME=/path/to/nekrs-install
     export PATH=$PATH:$NEKRS_HOME/bin
