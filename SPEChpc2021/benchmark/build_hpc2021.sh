@@ -4,7 +4,7 @@
 ml NiaEnv/2022a gcc/11.3.0 openmpi/4.1.4+ucx-1.11.2
 
 # Set installation directory:
-INSTALL_DIR=/scratch/s/scinet/bmundim/SPEC/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/hpc2021
+INSTALL_DIR=/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4+ucx-1.11.2/hpc2021
 
 # Source SPEC environment at the installation directory:
 cd $INSTALL_DIR
