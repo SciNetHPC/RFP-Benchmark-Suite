@@ -40,9 +40,11 @@
 
 We propose 4 different cases to benchmark 2 different IOR apis: posix and mpiio. The basic command line to run IOR is as follows:
 
-  ```
-  $ mpirun /path/to/ior -vv -o /path/to/data/file/test -l=random -M=70% -a=posix -b=8g -t=16m -i=2 -g -d=10 -e -C -Q=40
-  ```
+```
+    $ mpirun /path/to/ior -vv -o /path/to/data/file/test -l=random -M=70% -a=posix -b=8g -t=16m -i=2 \
+      -g -d=10 -e -C -Q=40
+```
+
 
 ### Description of the options:
 
