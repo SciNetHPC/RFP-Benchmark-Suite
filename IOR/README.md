@@ -76,7 +76,7 @@ We propose 4 different cases to benchmark 2 different IOR apis: posix and mpiio.
 
 ### IOR Benchmark Cases:
 
-All cases below are to be run for 3 different transfer sizes: 1MB, 4MB, and 16MB. The base command is the same as above with some small option adjustments:
+All cases below are to be run for 3 different transfer sizes: 1MB, 4MB, and 16MB, totalling 12 benchmark runs. The base command is the same as above with some small option adjustments:
 
   1. **Case 1:** It uses the default IOR posix api with a single shared file. The reference submit script is the **ior_posix_N0072_n40_t16m.sh** script on the benchmark directory and it encodes the base command explained above for the transfer size of 16MB.
 
@@ -94,7 +94,7 @@ IOR outputs its results to standard output which the reference scripts redirect 
    2. Scroll down to the **Results:** session and collect at the end of it the read and write maximum values in MB per second for the two test iterations.
    3. Scroll down even further to the **Summary of all tests:** session and collect the maximum read and write values for IOPs in number of input/output operations per second.
    4. Enter those values in the **HPL,IOR** tab of the LP2BM Schedule G spreadsheet.
-   5. Repeat the process for transfer sizes of 1MB, 4MB and 16MB.
+   5. Repeat the process for transfer sizes of 1MB, 4MB and 16MB for each of the 4 cases mentioned above.
 
 All makefiles, scripts, environment settings, and source code patches (if any), along with the raw output of the benchmark runs must be provided with the response. Sample output for the reference benchmark can be found at the [benchmark/sample_output](benchmark/sample_output) directory.
 
