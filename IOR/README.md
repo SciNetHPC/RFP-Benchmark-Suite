@@ -1,12 +1,10 @@
-
 # HPC IOR Benchmark
----
 
-## I. Description:
+## Description
 
-   HPC IO Benchmark [IOR](https://ior.readthedocs.io/en/latest/) is a parallel IO benchmark that can be used to test the performance of parallel storage systems using various interfaces and access patterns. It uses a common parallel I/O abstraction backend and rely on MPI for synchronization.
+HPC IO Benchmark [IOR](https://ior.readthedocs.io/en/latest/) is a parallel IO benchmark that can be used to test the performance of parallel storage systems using various interfaces and access patterns. It uses a common parallel I/O abstraction backend and rely on MPI for synchronization.
 
-## II. How to Build:
+## How to Build
 
   1. Download the latest IOR release from their public git repository on github:
 
@@ -36,7 +34,7 @@
 
   5. The above steps are included as a reference in the **build_IOR.sh** script on [benchmark](benchmark) directory.
 
-## III. How to Run:
+## How to Run
 
 We propose 4 different cases to benchmark 2 different IOR apis: posix and mpiio. The basic command line to run IOR is as follows:
 
@@ -45,8 +43,7 @@ We propose 4 different cases to benchmark 2 different IOR apis: posix and mpiio.
       -g -d=10 -e -C -Q=40
 ```
 
-
-### Description of the options:
+### Description of the options
 
   1. The -vv option just increases the verbosity of the output. It should be kept as it is.
 
@@ -74,7 +71,7 @@ We propose 4 different cases to benchmark 2 different IOR apis: posix and mpiio.
 
   13. The -Q=40 option instructs -C option to change the task read back ordering by n+40, where 40 is the number of tasks per node used in the reference examples. The idea is to make sure that any task in the node will only read data written by tasks from another node. This option might be modified to update the number of tasks used per node, but it must be present in the reported results.
 
-### IOR Benchmark Cases:
+### IOR Benchmark Cases
 
 All cases below are to be run for 3 different transfer sizes: 1MB, 4MB, and 16MB, totalling 12 benchmark runs. The base command is the same as above with some small option adjustments:
 
@@ -86,7 +83,7 @@ All cases below are to be run for 3 different transfer sizes: 1MB, 4MB, and 16MB
 
   4. **Case 4:** It uses the IOR mpiio api with a single shared file, but it instructs IOR to use mpiio FileView. It adds the mpiio option to case 3 options: --mpiio.useFileView. The reference submit script is the **ior_mpiio.useFileView_N0072_n40_t16m.sh** script on the benchmark directory and it encodes this case for the transfer size of 16MB.
 
-## IV. Reporting Results
+## Reporting Results
 
 IOR outputs its results to standard output which the reference scripts redirect to a file on the same directory they were executed. The following steps guide you on reporting the results from this file:
 
