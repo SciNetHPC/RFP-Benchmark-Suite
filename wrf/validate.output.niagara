@@ -1,0 +1,84 @@
+
+running python script to construct differences, takes about 1 minute
+
+compiler comparison for theta
+Input, F-statistic: 6.564409613525665e-05
+Input, df factor: 1
+Input, df error: 912
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.006462701412075576
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
+
+compiler comparison for qv
+Input, F-statistic: 6.098468131697929e-06
+Input, df factor: 1
+Input, df error: 912
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.0019698399857100064
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
+
+compiler comparison for u
+Input, F-statistic: 6.083129841433738e-06
+Input, df factor: 1
+Input, df error: 912
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.001967361253578007
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
+ 
+ 
+ 
+MPI ranks used:     50 x 80 = 4000
+Radiation Time:     1.17564 sec
+Non-radiation Time: 2.89026 sec
+Total Time:         4.0659 sec
