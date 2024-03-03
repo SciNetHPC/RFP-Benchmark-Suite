@@ -10,29 +10,29 @@
 
   1. Download the latest IOR release from their public git repository on github:
 
-     ```
-     $ wget https://github.com/hpc/ior/releases/download/4.0.0/ior-4.0.0.tar.gz
-     ```
+      ```
+         $ wget https://github.com/hpc/ior/releases/download/4.0.0/ior-4.0.0.tar.gz
+      ```
 
   2. Extract the tarball in the local source code directory:
 
-     ```
-     $ tar -xzf ior-4.0.0.tar.gz
-     ```
+      ```
+         $ tar -xzf ior-4.0.0.tar.gz
+      ```
 
   3. Configure where you want to install it:
 
-     ```
-     $ cd ior-4.0.0
-     $ ./configure --prefix=/path/to/install/directory
-     ```
+      ```
+         $ cd ior-4.0.0
+         $ ./configure --prefix=/path/to/install/directory
+      ```
 
   4. Build and install IOR:
 
-    ```
-    $ make -j
-    $ make install
-    ```
+      ```
+         $ make -j
+         $ make install
+      ```
 
   5. The above steps are included as a reference in the **build_IOR.sh** script on [benchmark](benchmark) directory.
 
