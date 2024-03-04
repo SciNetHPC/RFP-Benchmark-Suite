@@ -1,0 +1,251 @@
+                                       SPEChpc(TM) 2021 Large Result
+                                               Lenovo Niagara
+                                    Test Sponsor: University of Toronto
+
+                hpc2021 License: 7387                                    Test date: Mar-2024
+                Test sponsor: University of Toronto          Hardware availability: Feb-2018
+                Tested by:    University of Toronto          Software availability: Mar-2018
+
+               Base   Base    Thrds   Base       Base         Peak   Peak   Thrds    Peak       Peak
+Benchmarks     Model  Ranks  pr Rnk   Run Time   Ratio        Model  Ranks  pr Rnk   Run Time   Ratio
+-------------- ------ ------  ------  ---------  ---------    ------ ------  ------  ---------  ---------   
+805.lbm_l         MPI   8192       1       1591       1.71  S                                                
+805.lbm_l         MPI   8192       1       1597       1.71  *                                                
+818.tealeaf_l     MPI   8192       1        727       1.99  *                                                
+818.tealeaf_l     MPI   8192       1        726       2.00  S                                                
+819.clvleaf_l     MPI   8192       1       1133       1.85  *                                                
+819.clvleaf_l     MPI   8192       1       1015       2.07  S                                                
+828.pot3d_l       MPI   8192       1       2340       1.94  *                                                
+828.pot3d_l       MPI   8192       1       2334       1.95  S                                                
+834.hpgmgfv_l     MPI   8192       1       1164       2.88  S                                                
+834.hpgmgfv_l     MPI   8192       1       1166       2.87  *                                                
+835.weather_l     MPI   8192       1       1633       2.10  S                                                
+835.weather_l     MPI   8192       1       1658       2.07  *                                                
+============================================================================================================
+805.lbm_l         MPI   8192       1       1597       1.71  *                                                
+818.tealeaf_l     MPI   8192       1        727       1.99  *                                                
+819.clvleaf_l     MPI   8192       1       1133       1.85  *                                                
+828.pot3d_l       MPI   8192       1       2340       1.94  *                                                
+834.hpgmgfv_l     MPI   8192       1       1166       2.87  *                                                
+835.weather_l     MPI   8192       1       1658       2.07  *                                                
+ SPEChpc 2021_lrg_base                                2.04
+ SPEChpc 2021_lrg_peak                                                                            Not Run
+
+
+                                             BENCHMARK DETAILS
+                                             -----------------
+      Type of System: Homogenous
+  Compute Nodes Used: 1548
+         Total Chips: 3096
+         Total Cores: 61920
+       Total Threads: 123840
+        Total Memory: 312696 GB
+  Total Accelerators: 0
+            Compiler: C/C++/Fortran: Version 11.3.0 of
+                      GNU Compilers
+         MPI Library: OpenMPI Version 4.1.4
+      Other MPI Info: None
+      Other Software: None
+ Base Parallel Model: MPI
+      Base Ranks Run: 8192
+    Base Threads Run: 1
+Peak Parallel Models: Not Run
+
+                                            Node Description: --
+                                            ====================
+
+
+                                                  HARDWARE
+                                                  --------
+     Number of nodes: 1548
+    Uses of the node: compute
+              Vendor: Lenovo
+               Model: SD530
+            CPU Name: Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
+    CPU(s) orderable: 1 to 2 chips
+       Chips enabled: 2
+       Cores enabled: 40
+      Cores per chip: 20
+    Threads per core: 2
+ CPU Characteristics: Turbo up to 3.7 GHz
+             CPU MHz: 2400
+       Primary Cache: 32 KiB I + 32 KiB D on chip per core
+     Secondary Cache: 1024 KiB
+            L3 Cache: 27.5 MiB
+         Other Cache: None
+              Memory: 202 GB (12 x 16 GiB DDR4 DIMMS @ 2666 MHz)
+      Disk Subsystem: None
+      Other Hardware: None
+
+
+                                                  SOFTWARE
+                                                  --------
+
+
+                                            Node Description: --
+                                            ====================
+
+
+                                                  HARDWARE
+                                                  --------
+         Accel Count: 0
+         Accel Model: None
+        Accel Vendor: None
+          Accel Type: GPU
+    Accel Connection: PCIe 3.0 16x
+   Accel ECC enabled: Yes
+   Accel Description: See Notes
+             Adapter: None
+  Number of Adapters: 0
+           Slot Type: None
+           Data Rate: None
+          Ports Used: 0
+   Interconnect Type: None
+
+
+                                                  SOFTWARE
+                                                  --------
+             Adapter: None
+      Adapter Driver: None
+    Adapter Firmware: None
+    Operating System: CentOS Linux release 7.9.2009
+                      3.10.0-1160.108.1.el7.x86_64
+   Local File System: None
+  Shared File System: gpfs
+        System State: Multi-user, run level 3
+      Other Software: None
+
+
+                                           Node Description: NFS
+                                           =====================
+
+
+                                                  HARDWARE
+                                                  --------
+     Number of nodes: 1
+    Uses of the node: Fileserver
+              Vendor: Big Storage Company
+               Model: BG650
+            CPU Name: Intel Xeon Platinum 8280
+    CPU(s) orderable: 1-2 chips
+       Chips enabled: 2
+       Cores enabled: 56
+      Cores per chip: 28
+    Threads per core: 1
+ CPU Characteristics: None
+             CPU MHz: 2700
+       Primary Cache: 32 KB I + 32 KB D on chip per core
+     Secondary Cache: 1 MB I+D on chip per core
+            L3 Cache: 39424 KB I+D on chip per chip
+         Other Cache: None
+              Memory: 768 GB (24 x 32 GB 2Rx4 PC4-2933Y-R)
+      Disk Subsystem: 1 x 1 TB 12 Gbps SAS 2.5" SSD (JBOD)
+      Other Hardware: None
+  Number of Adapters: 1
+           Slot Type: PCI-Express 3.0 x16
+           Data Rate: 100 Gb/s
+          Ports Used: 1
+   Interconnect Type: BG 5000 series
+
+
+                                                  SOFTWARE
+                                                  --------
+      Adapter Driver: 10.9.1.0.15
+    Adapter Firmware: 10.9.0.1.0
+    Operating System: Red Hat Enterprise Linux Server release 7.6
+   Local File System: None
+  Shared File System: NFS
+        System State: Multi-User, run level 3
+      Other Software: None
+
+
+                             Interconnect Description: Big Interconnect Company
+                             ==================================================
+
+
+                                                  HARDWARE
+                                                  --------
+              Vendor: Big Interconnect Company
+               Model: BI 100 Series
+        Switch Model: BI 100 Series 48 Port 2
+                      PSU
+  Number of Switches: 1
+     Number of Ports: 48
+           Data Rate: 100 Gb/s
+            Firmware: 10.3.0.0.60
+            Topology: Mesh
+         Primary Use: MPI Traffic
+
+
+                                                  SOFTWARE
+                                                  --------
+
+
+
+                                                Submit Notes
+                                                ------------
+    The config file option 'submit' was used.
+        mpirun -np $ranks $command
+
+                                               General Notes
+                                               -------------
+     Environment Settings:
+      Any extra settings
+
+                                           Compiler Version Notes
+                                           ----------------------
+    ==============================================================================
+     FC  819.clvleaf_l(base) 828.pot3d_l(base) 835.weather_l(base)
+
+    ------------------------------------------------------------------------------
+    GNU Fortran (GCC) 11.3.0
+    Copyright (C) 2021 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    ------------------------------------------------------------------------------
+    
+    ==============================================================================
+     CC  805.lbm_l(base) 818.tealeaf_l(base) 834.hpgmgfv_l(base)
+
+    ------------------------------------------------------------------------------
+    gcc (GCC) 11.3.0
+    Copyright (C) 2021 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+    ------------------------------------------------------------------------------
+
+                                          Base Compiler Invocation
+                                          ------------------------
+C benchmarks: 
+     mpicc
+
+Fortran benchmarks: 
+     mpif90
+
+
+                                           Base Portability Flags
+                                           ----------------------
+ 819.clvleaf_l: -ffree-line-length-none
+   828.pot3d_l: -ffree-line-length-none
+ 835.weather_l: -ffree-line-length-none
+
+
+                                          Base Optimization Flags
+                                          -----------------------
+C benchmarks: 
+     -Ofast -march=native
+
+Fortran benchmarks: 
+     -Ofast -march=native -fno-stack-protector
+
+
+  SPEChpc is a trademark of the Standard Performance Evaluation
+    Corporation.  All other brand and product names appearing in this
+    result are trademarks or registered trademarks of their respective
+    holders.
+-------------------------------------------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact info@spec.org.
+Copyright 2021-2024 Standard Performance Evaluation Corporation
+Tested with SPEChpc2021 v1.1.8 on 2024-03-04 10:19:19-0500.
+Report generated on 2024-03-04 15:04:58 by hpc2021 ASCII formatter v112.
