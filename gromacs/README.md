@@ -12,7 +12,7 @@ The reference benchmark for the LP2BM was run on one Intel Icelake
 ## How to Run the Benchmark
 
  1. Get the 2024 version of GROMACS from
-    https://ftp.gromacs.org/pub/gromacs/$source_archive/gromacs-2024.tar.gz
+    https://ftp.gromacs.org/pub/gromacs/gromacs-2024.tar.gz
 
  2. Make sure CUDA and a recent GNU g++ compiler are available.
  
