@@ -12,7 +12,7 @@ Based on the [PRACE Unified European Applications Benchmark Suite medium testcas
    mpirun command is available.  In the reference benchmark
    openmpi/4.1.4 was compiled with gcc/8.3.0.  There is a list of
    commands that were run to build Quantum-Espresso on Niagara in the
-   [`build_qe.sh`](build_qe.sh) file.
+   [`build_qe.sh`](niagara/build_qe.sh) file.
 
 4. In the benchmark directory of quantum-espresso run:
 
@@ -32,7 +32,7 @@ Based on the [PRACE Unified European Applications Benchmark Suite medium testcas
    `--map-by node:pe=$NUM_CPUS_PER_NODE` will need to be added as an
    mpirun argument, and possibly
    `OMP_NUM_THREADS=$NUM_CPUS_PER_NODE`. An example SLURM script is
-   provided, [submit.slurm](benchmark/submit.slurm) that was used to produce the reference
+   provided, [submit.slurm](niagara/submit.slurm) that was used to produce the reference
    benchmark on Niagara.
 
 5. Note the benchmark problem size fits on a minimum of 100 nodes of
