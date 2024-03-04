@@ -92,8 +92,7 @@ How to Run the Benchmark
     
     More instructions can be found in the README file inside the stmv_sc14 directory.
 
-    Note the benchmark problem size fits on a minimum of 8 nodes of Niagara 
-    at ~130GB memory usage per node.
+    Note the reference benchmark run on 100 nodes of Niagara used ~50GB of memory per node.
 
  7. The code will automatically report the value of the number of
     nanoseconds simulated per walltime day (ns/day).
