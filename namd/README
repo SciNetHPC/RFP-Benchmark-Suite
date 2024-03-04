@@ -35,13 +35,13 @@ How to Run the Benchmark
     and can be downloaded from
 
       https://www.ks.uiuc.edu/Research/namd/utilities/stmv.tar.gz
+      (md5sum ef1c9362fc6dbc02dc8f01176c29075a)
+
 
     and
 
       https://www.ks.uiuc.edu/Research/namd/utilities/stmv_sc14.tar.gz
-
-    These files can also be found in the benchmark directory, under
-    "benchmark/stmv.tar.gz" and "benchmark/stmv_sc14.tar.gz".
+      (md5sum b377a126718aac59c22ca6799a3c9c05)
 
     Untar both files and copy all of the files from the stmv directory:
 
