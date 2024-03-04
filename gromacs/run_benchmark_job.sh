@@ -1,17 +1,16 @@
 #!/bin/bash
-
 #SBATCH --nodes=1
 #SBATCH --time=02:00:00
 #SBATCH --gpus-per-node=4
 #SBATCH -p compute_full_node
 
-module load cmake/3.27.8 # min 3.18.4 required
+module load cmake
 module load gcc/12.3.0
 module load cuda/12.3.1
 
 nvidia-smi
 
-export gmx="$HOME/gromacs/bin/gmx"
+export gmx="install/bin/gmx"
 
 export GMX_ENABLE_DIRECT_GPU_COMM=1
 
@@ -20,3 +19,4 @@ $gmx mdrun -ntmpi 8 -ntomp 16 -nb gpu -pme gpu -npme 1 -update gpu -bonded gpu -
 grep Performance md.log
 
 rm ener.edr
+

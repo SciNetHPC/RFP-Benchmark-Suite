@@ -1,27 +1,22 @@
 #!/bin/bash
-module load cmake/3.27.8 # min 3.18.4 required
-module load gcc/12.3.0
-module load cuda/12.3.1
 
-# extract the gromacs file
-tar -xzf topol.tar.gz
+source_archive="gromacs-2024.tar.gz"
+source_url="https://ftp.gromacs.org/pub/gromacs/$source_archive"
+source_md5sum="6fd5bedba9f84e5b397b4cbe5720ae1e"
 
-mkdir ~/gromacs_installation
-cd ~/gromacs_installation
+wget "$source_url" -O "$source_archive"
+md5sum --check <<<"$source_md5sum $source_archive"
 
-wget https://ftp.gromacs.org/pub/gromacs/gromacs-2024.tar.gz
+module load cmake cuda/12.3.1 gcc/12.3.0
 
-md5sum --check <<<"6fd5bedba9f84e5b397b4cbe5720ae1e gromacs-2024.tar.gz"
-
-tar -xaf gromacs-2024.tar.gz
-
+tar -xaf "$source_archive"
 cd gromacs-2024
 
-mkdir build
+mkdir build install
 cd build
 
 cmake .. \
-    -DCMAKE_INSTALL_PREFIX="${HOME}/gromacs" \
+    -DCMAKE_INSTALL_PREFIX="../install" \
     -DGMX_BUILD_OWN_FFTW=ON \
     -DREGRESSIONTEST_DOWNLOAD=ON \
     -DGMX_OPENMP=ON \
