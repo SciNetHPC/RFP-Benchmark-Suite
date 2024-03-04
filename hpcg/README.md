@@ -16,13 +16,13 @@ with the main SpMV threaded over matrix rows.
 
  1. Download the source code from https://github.com/hpcg-benchmark/hpcg version 3.1.0: 
 
-    wget https://github.com/hpcg-benchmark/hpcg/archive/refs/tags/HPCG-release-3-1-0.tar.gz
-    (md5sum: bebe50185b365daf7b6b60f26ef3a390)
+        wget https://github.com/hpcg-benchmark/hpcg/archive/refs/tags/HPCG-release-3-1-0.tar.gz
+        (md5sum: bebe50185b365daf7b6b60f26ef3a390)
 
  2. Unpack:
 
-    tar xaf HPCG-release-3-1-0.tar.gz 
-    cd hpcg-HPCG-release-3-1-0 
+        tar xaf HPCG-release-3-1-0.tar.gz 
+        cd hpcg-HPCG-release-3-1-0 
 
  3. Create an architecture reference file in the setup directory. Examples are provided
 for Linux platforms with MPI and OpenMP using a variety of compilers. For instance, name
