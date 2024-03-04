@@ -5,38 +5,38 @@
 # General SUT info
 system_vendor      = Lenovo
 system_name        = Niagara
+system_class       = Homo
 hw_avail           = Feb-2018
 sw_avail           = Mar-2018
 
 # Computation node info 
 # [Node_Description: Hardware]
-node_compute_syslbl = Intel Xeon Gold 6148
-node_compute_order = 1
-node_compute_count = 2
-node_compute_purpose = compute
-node_compute_hw_vendor = Lenovo
-node_compute_hw_model = Intel Xeon Gold 6148
-node_compute_hw_cpu_name = Intel Xeon Gold 6148
-node_compute_hw_ncpuorder = 1 chips
-node_compute_hw_nchips = 2
-node_compute_hw_ncores = 40
-node_compute_hw_ncoresperchip = 20
-node_compute_hw_nthreadspercore = 40
-node_compute_hw_cpu_char = Turbo up to 3.7 GHz
-node_compute_hw_cpu_mhz = 2400
-node_compute_hw_pcache = 32 KB I + 32 KB D on chip per core
-node_compute_hw_scache = 512 KB I+D on chip per core
-node_compute_hw_tcache000= 256 MB I+D on chip per chip
-node_compute_hw_tcache001 = 16 MB shared / 4 cores
-node_compute_hw_ocache = None
-node_compute_hw_memory = 202 GB (8 x 32 GB 2Rx8 PC4-3200AA-R)
-node_compute_hw_disk = None
-node_compute_hw_other = None
+node_LenovoSD530_label = Lenovo SD530 Server
+node_LenovoSD530_order = 1
+node_LenovoSD530_count = 1548
+node_LenovoSD530_purpose = compute
+node_LenovoSD530_hw_vendor = Lenovo
+node_LenovoSD530_hw_model = SD530
+node_LenovoSD530_hw_cpu_name = Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
+node_LenovoSD530_hw_ncpuorder = 1 to 2 chips
+node_LenovoSD530_hw_nchips = 2
+node_LenovoSD530_hw_ncores = 40
+node_LenovoSD530_hw_ncoresperchip = 20
+node_LenovoSD530_hw_nthreadspercore = 2
+node_LenovoSD530_hw_cpu_char = Turbo up to 3.7 GHz
+node_LenovoSD530_hw_cpu_mhz = 2400
+node_LenovoSD530_hw_pcache = 32 KiB I + 32 KiB D on chip per core
+node_LenovoSD530_hw_scache = 1024 KiB
+node_LenovoSD530_hw_tcache000= 27.5 MiB
+node_LenovoSD530_hw_ocache = None
+node_LenovoSD530_hw_memory = 202 GB (12 x 16 GiB DDR4 DIMMS @ 2666 MHz)
+node_LenovoSD530_hw_disk = None
+node_LenovoSD530_hw_other = None
 
 #[Node_Description: Accelerator]
-node_compute_hw_accel_model = Tesla V100-PCIE-16GB
-node_compute_hw_accel_count = 4
-node_compute_hw_accel_vendor= NVIDIA Corporation
+node_compute_hw_accel_model = None
+node_compute_hw_accel_count = 0
+node_compute_hw_accel_vendor= None
 node_compute_hw_accel_type  = GPU
 node_compute_hw_accel_connect = PCIe 3.0 16x
 node_compute_hw_accel_ecc    = Yes
@@ -51,10 +51,10 @@ node_compute_hw_adapter_fs_ports_used = 0
 node_compute_hw_adapter_fs_interconnect = None
 node_compute_hw_adapter_fs_driver = None
 node_compute_hw_adapter_fs_firmware = None
-node_compute_sw_os000 = SUSE Linux Enterprise Linux Server 12
-node_compute_sw_os001 = 4.12.14-94.41-default
-node_compute_sw_localfile = xfs
-node_compute_sw_sharedfile = None
+node_compute_sw_os000 = CentOS Linux release 7.9.2009
+node_compute_sw_os001 = 3.10.0-1160.108.1.el7.x86_64
+node_compute_sw_localfile = None
+node_compute_sw_sharedfile = gpfs
 node_compute_sw_state = Multi-user, run level 3
 node_compute_sw_other = None
 
