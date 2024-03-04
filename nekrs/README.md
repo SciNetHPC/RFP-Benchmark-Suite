@@ -29,9 +29,14 @@
    the code, and output these numbers. The "totalElapsed=" in seconds 
    should be reported in the "NekRS" tab of the LP2BM Schedule G spreadsheet.
 
-7. Note that the code may fail at runtime during the JIT kernel compilation phase if switching
+7. The input files were generated from the `turbChannel` example found in the NekRS repository
+   [here](https://github.com/Nek5000/nekRS/tree/master/examples/turbChannel). The mesh size
+   was increased in `turbChannel.box` and [`genbox`](https://github.com/Nek5000/Nek5000/tree/master/tools/genbox)
+   was used to generate a new mesh file, `turbChannel.re2`
+
+9. Note that the code may fail at runtime during the JIT kernel compilation phase if switching
    between architectures. Try removing the .cache directory generated in the benchmark directory.
 
-8. All modified source code, output logs, and solution files are to be provided in with the
+10. All modified source code, output logs, and solution files are to be provided in with the
    response.
 
