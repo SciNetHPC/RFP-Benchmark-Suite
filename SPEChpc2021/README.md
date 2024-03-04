@@ -59,7 +59,7 @@ The [SPEChpc 2021 Large Workload Benchmark](https://www.spec.org/hpc2021/docs/in
 ```bash
    $ runhpc --config=gnu.cfg --action=build --tune=base --ranks 40 large
 ```
-For convenience we provide a build script for the reference benchmark, [build_hpc2021.sh](build_hpc2021.sh). Modify its INSTALL_DIR and NTASKS variables according to your system specifications and run **build_hpc2021.sh** to build the large benchmark.
+For convenience we provide a build script for the reference benchmark, [build_hpc2021.sh](build_hpc2021.sh). Modify its INSTALL_DIR and NTASKS variables according to your system specifications and run **build_hpc2021.sh** to build the **large** benchmark.
 
 
 ## How to Run
@@ -85,7 +85,7 @@ The basic command to run the large workload is as follows:
 
   6. The --pmodel chooses the parallel model of the benchmark. For the purposes of this RFP please use the default: MPI.
 
-  7. Finally the benchmark should be run for the large workload.
+  7. Finally the benchmark should be run for the **large** workload.
 
 ### Reference Benchmark
 
@@ -109,7 +109,7 @@ The basic command to run the large workload is as follows:
 runhpc --config=gnu.cfg --flagsurl=$SPEC/config/flags/gcc_flags.xml --ranks 8192 --reportable --tune=base --pmodel MPI large
 
 ``` 
-For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_large_N103_n4096.sh](submit_hpc2021_large_N103_n4096.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and run **submit_hpc2021_large_N103_n4096.sh**, the large workload benchmark.
+For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_large_N103_n4096.sh](submit_hpc2021_large_N103_n4096.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_large_N103_n4096.sh** to run the large workload benchmark.
 
 
 ## Reporting Results
