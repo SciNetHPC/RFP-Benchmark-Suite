@@ -32,7 +32,7 @@ HPC IO Benchmark [IOR](https://ior.readthedocs.io/en/latest/) is a parallel IO b
          $ make install
       ```
 
-  5. The above steps are included as a reference in the **build_IOR.sh** script on [benchmark](benchmark) directory.
+  5. The above steps are included as a reference in the [**build_IOR.sh**](build_IOR.sh) script.
 
 ## How to Run
 
