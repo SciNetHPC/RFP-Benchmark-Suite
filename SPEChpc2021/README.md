@@ -109,12 +109,12 @@ The basic command to run the large workload is as follows:
 runhpc --config=gnu.cfg --flagsurl=$SPEC/config/flags/gcc_flags.xml --ranks 8192 --reportable --tune=base --pmodel MPI large
 
 ``` 
-For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_large_N103_n4096.sh](submit_hpc2021_large_N103_n4096.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_large_N103_n4096.sh** to run the large workload benchmark.
+For convenience we provide a slurm submit script for the reference benchmark, [submit_hpc2021_large_N205_n8192.sh](submit_hpc2021_large_N205_n8192.sh). Modify its INSTALL_DIR, the number of nodes (or tasks), partition and account according to your system specifications and submit to slurm **submit_hpc2021_large_N205_n8192.sh** to run the large workload benchmark.
 
 
 ## Reporting Results
 
-SPEChpc 2021 Large Workload Benchmark outputs its results to the **$SPEC/result** directory. For example, our reference benchmark run wrote its results as **$SPEC/result/hpc2021_lrg.016.large.txt** file. The following steps guide you on reporting the results from this file:
+SPEChpc 2021 Large Workload Benchmark outputs its results to the **$SPEC/result** directory. For example, our reference benchmark run wrote its results as **$SPEC/result/hpc2021_lrg.017.large.txt** file. The following steps guide you on reporting the results from this file:
 
    1. Open the file and read the SPEChpc 2021_lrg_base score.
    2. Enter that score in the **SPEChpc** tab of the LP2BM Schedule G spreadsheet.
