@@ -56,8 +56,9 @@ require the longer, 1800 second base run.
 
 Global Problem Size Definition:
 
-- LP2BM Reference Size: 560 4320 7520 (minimum global mesh size)
-- Full System Size: minimum 1/4 system memory 
+- Niagara Reference Size: 560 4320 7520
+- LP2BM Global mesh size must be larger than Niagara Reference Size
+- LP2BM Full System size must be at least 1/4 system memory
 
 Mapping of MPI ranks to nodes or global mesh decomposition over nodes can be modifed by
 the user as required but the final mesh must meet the requirements above.
