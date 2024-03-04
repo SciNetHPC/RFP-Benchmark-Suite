@@ -57,7 +57,7 @@ The following 8 application benchmarks make up the Large-Parallel Refresh System
 
 - [GROMACS](https://www.gromacs.org/) (GROningen MAchine for Chemical Simulations) is a versatile package used primarily for molecular dynamics simulations of biomolecules, such as proteins, lipids, and nucleic acids. It is designed to perform simulations of large biomolecular systems with high efficiency on CPUs, GPUs, and specialized hardware. GROMACS provides a wide range of functionalities for simulating molecular systems, including energy minimization, molecular dynamics simulations, free energy calculations, and analysis tools for studying the dynamics and properties of biomolecules at the atomic level. It is widely used in various fields such as biochemistry, biophysics, pharmaceutical research, and materials science.
 - LP2BM specific instructions and input files can be found in the [gromacs](gromacs) directory.
-- The reported GROMACS benchmark results must be run on a minimum of 4 GPUs.
+- The reported GROMACS benchmark results must be run on a minimum of one GPU node.
 
 ### MLPerf
 
@@ -65,7 +65,7 @@ The following 8 application benchmarks make up the Large-Parallel Refresh System
 - It is developed by MLCommons, a consortium of AI leaders from academia, research labs, and industry.
 - The benchmark measures how fast a system can train models to a target quality metric.
 - LP2BM specific instructions can be found in the [mlperf](mlperf) directory.
-- The reported MLPerf benchmark results must be run on a minimum of 16 GPUs.
+- The reported MLPerf benchmark results must be run on a minimum of 4 GPU nodes.
 
 ## Acceptance criteria
 

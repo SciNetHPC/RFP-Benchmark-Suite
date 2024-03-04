@@ -13,8 +13,7 @@ dataset to a quality target of 75.90% classification.
 2) Natural language processing: training of the BERT-large model on the 
 Wikipedia 2020/01/01 dataset to a quality target of 0.72 Mask-LM accuracy.
 
-In both cases, exactly 16 GPU accelerators are to be used, and any number of CPU 
-cores.
+In both cases, 4 GPU nodes are to be used.
 
 Proponents may use their own implementations of the benchmarks under the rules 
 of the closed division, or choose to use the reference implementation[1]. In 
