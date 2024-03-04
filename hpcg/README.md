@@ -51,14 +51,14 @@ output of HPCG describes the global mesh size which takes the per-node mesh size
 decomposition to calculate the global sizes. Weak scaling is used to increase the size of
 the mesh. A "rt" value of 1800 must be used for the benchmark to report a valid result in
 machine acceptance. Projected responses based on simulation or other performance models
-may be run with a shorter time as needed but final acceptance of applications will
-require the longer, 1800 second base run.
+may be run with a shorter time as needed but final acceptance will
+require the longer, 1800 second case to run on the full proposed CPU system.
 
 Global Problem Size Definition:
 
 - Niagara Reference Size: 560 4320 7520
 - LP2BM Global mesh size must be larger than Niagara Reference Size
-- LP2BM Full System size must be at least 1/4 system memory
+- LP2BM Full System size must use at least 1/4 system memory
 
 Mapping of MPI ranks to nodes or global mesh decomposition over nodes can be modifed by
 the user as required but the final mesh must meet the requirements above.
