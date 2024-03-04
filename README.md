@@ -1,8 +1,8 @@
 # Large-Parallel Refresh System Benchmark (LP2BM)
 
-Benchmarks required for the 2024 University of Toronto Large-Parallel Refresh (LP2) System procurement. The benchmark sources and specific run instructions are provided for each of the benchmarks below. Information on baseline, optimization and reporting of the benchmark scores is described in Schedule G of the procurement document.
-
-The following 8 application benchmarks make up the Large-Parallel Refresh System Benchmark (LP2BM). Each benchmark includes the source codes or download links to source code, benchmark run requirements and the instructions for reporting results.
+The following 8 application benchmarks make up the Large-Parallel Refresh System Benchmark (LP2BM),
+for the 2024 University of Toronto Large-Parallel Refresh (LP2) System procurement.
+Each benchmark includes the source codes or download links to source code, benchmark run requirements and the instructions for reporting results.
 
 ## CPU-node benchmarks
 
@@ -53,7 +53,7 @@ The following 8 application benchmarks make up the Large-Parallel Refresh System
 
 ## GPU-node benchmarks
 
-### GROMACS (GPU)
+### GROMACS
 
 - [GROMACS](https://www.gromacs.org/) (GROningen MAchine for Chemical Simulations) is a versatile package used primarily for molecular dynamics simulations of biomolecules, such as proteins, lipids, and nucleic acids. It is designed to perform simulations of large biomolecular systems with high efficiency on CPUs, GPUs, and specialized hardware. GROMACS provides a wide range of functionalities for simulating molecular systems, including energy minimization, molecular dynamics simulations, free energy calculations, and analysis tools for studying the dynamics and properties of biomolecules at the atomic level. It is widely used in various fields such as biochemistry, biophysics, pharmaceutical research, and materials science.
 - LP2BM specific instructions and input files can be found in the [gromacs](gromacs) directory.
