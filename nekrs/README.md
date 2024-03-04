@@ -3,7 +3,7 @@
 1. Download source code from https://github.com/Nek5000/nekRS/archive/refs/tags/v23.0.tar.gz
    (md5sum: 475131966c187ccfda72f1a8a20ef36f).
 
-2. Extract source code: `tar -xaf v23.0.tar.gz`
+2. Extract source code: `tar -xaf nekRS-23.0.tar.gz`
 
 3. Modify the environment appropriately to use the correct compiler and
    optimization flags for the system in question. Make sure the mpirun command is available.
