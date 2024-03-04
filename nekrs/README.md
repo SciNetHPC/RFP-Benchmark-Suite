@@ -34,9 +34,9 @@
    was increased in `turbChannel.box` and [`genbox`](https://github.com/Nek5000/Nek5000/tree/master/tools/genbox)
    was used to generate a new mesh file, `turbChannel.re2`
 
-9. Note that the code may fail at runtime during the JIT kernel compilation phase if switching
+8. Note that the code may fail at runtime during the JIT kernel compilation phase if switching
    between architectures. Try removing the .cache directory generated in the benchmark directory.
 
-10. All modified source code, output logs, and solution files are to be provided in with the
+9. All modified source code, output logs, and solution files are to be provided in with the
    response.
 
