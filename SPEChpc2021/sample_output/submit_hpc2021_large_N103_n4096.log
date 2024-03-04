@@ -1,0 +1,897 @@
+runhpc v.unknown started at 2024-03-04 00:38:03 on "nia1580.scinet.local"
+runhpc is: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/harness/runhpc
+runhpc: runhpc --config=gnu.cfg --flagsurl=/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/config/flags/gcc_flags.xml --ranks 4096 --reportable --tune=base --pmodel MPI large
+toolset: linux-x86_64
+
+Locating benchmarks...found 32 benchmarks in 5 benchsets.
+Reading config file '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/config/gnu.cfg'
+Reading included config file '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/config/niagara.inc'
+
+Retrieving flags file (/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/config/flags/gcc_flags.xml)...
+
+
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type     Benchmarks
+--------   --------   --------   ---------------   ----------------------------
+validate   speed      ref        SPEChpc2021_lrg   large                       
+Loading "http://www.spec.org/auto/hpc2021/current_version" for version check...
+...Version check failed.
+NOTICE: Suite version checking failed;got
+  Could not connect to 'www.spec.org:80': Connection timed out
+
+
+          A connection to the internet is useful, but is NOT required
+          in order to run hpc2021.  If one is available, several
+          components will be checked to see if they are current.  If
+          you need to use an HTTP proxy to access the Internet, please
+          see the 'http_proxy' entry in config.html.
+
+                       ----------------------------------
+                       The run will continue in 5 seconds
+                       ----------------------------------
+
+-------------------------------------------------------------------------------
+
+Verbosity = 5
+Action    = validate
+Tune      = base
+Label     = gnu_mpi
+Size      = ref
+benchmarks= 805.lbm_l,818.tealeaf_l,819.clvleaf_l,828.pot3d_l,834.hpgmgfv_l,835.weather_l
+outputs   = text
+username  = joedoe
+Benchmarks selected: 805.lbm_l, 818.tealeaf_l, 819.clvleaf_l, 828.pot3d_l, 834.hpgmgfv_l, 835.weather_l
+Compiling Binaries
+
+------------------------------------------------------------------------
+
+COMP: "mpicc -c -o options.o -DSPEC -DNDEBUG  -Ispecmpitime  -Ofast -march=native -lm                 <source>"
+C: CC="mpicc"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-Ispecmpitime"
+O: OPTIMIZE=""
+O: COPTIMIZE="-Ofast -march=native -lm"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_CPORTABILITY=""
+LINK: "mpicc       -Ofast -march=native -lm         <objects>            -o options  "
+C: LD="mpicc"
+O: COPTIMIZE="-Ofast -march=native -lm"
+C: LDOUT="-o options"
+
+ CC_VERSION_OPTION:
+
+gcc (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 805.lbm_l base gnu_mpi
+
+------------------------------------------------------------------------
+
+COMP: "mpicc -c -o options.o -DSPEC -DNDEBUG  -I2d/drivers/ -I2d/c_kernels -Ispecmpitime  -Ofast -march=native -lm                 <source>"
+C: CC="mpicc"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-I2d/drivers/ -I2d/c_kernels -Ispecmpitime"
+O: OPTIMIZE=""
+O: COPTIMIZE="-Ofast -march=native -lm"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_CPORTABILITY=""
+LINK: "mpicc       -Ofast -march=native -lm         <objects>            -o options  "
+C: LD="mpicc"
+O: COPTIMIZE="-Ofast -march=native -lm"
+C: LDOUT="-o options"
+
+ CC_VERSION_OPTION:
+
+gcc (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 818.tealeaf_l base gnu_mpi
+
+------------------------------------------------------------------------
+
+FPP: "specpp -DSPEC -DNDEBUG <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY=""
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "mpif90 -c -o options.o -Ispecmpitime -Ofast -march=native -fno-stack-protector -ffree-line-length-none <source>"
+C: FC="mpif90"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-Ispecmpitime"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: PORTABILITY=""
+P: FPORTABILITY="-ffree-line-length-none"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+LINK: "mpif90       -Ofast -march=native -fno-stack-protector     -ffree-line-length-none    <objects>            -o options  "
+C: LD="mpif90"
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: FPORTABILITY="-ffree-line-length-none"
+C: LDOUT="-o options"
+
+ FC_VERSION_OPTION:
+
+GNU Fortran (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 819.clvleaf_l base gnu_mpi
+
+------------------------------------------------------------------------
+
+FPP: "specpp -DSPEC -DNDEBUG -Ihdf5 -Ihdf5/include -DNDEBUG <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FPPFLAGS="-Ihdf5 -Ihdf5/include -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY=""
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "mpif90 -c -o options.o -Ofast -march=native -fno-stack-protector -ffree-line-length-none <source>"
+C: FC="mpif90"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: PORTABILITY=""
+P: FPORTABILITY="-ffree-line-length-none"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+LINK: "mpif90       -Ofast -march=native -fno-stack-protector     -ffree-line-length-none    <objects>            -o options  "
+C: LD="mpif90"
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: FPORTABILITY="-ffree-line-length-none"
+C: LDOUT="-o options"
+
+ FC_VERSION_OPTION:
+
+GNU Fortran (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 828.pot3d_l base gnu_mpi
+
+------------------------------------------------------------------------
+
+COMP: "mpicc -c -o options.o -DSPEC -DNDEBUG -Ispecmpitime -DUSE_BICGSTAB=1 -DUSE_SUBCOMM=1 -DUSE_FCYCLES=1 -DUSE_GSRB=1 -DBLOCKCOPY_TILE_I=32 -DBLOCKCOPY_TILE_J=4 -DBLOCKCOPY_TILE_K=16 -DBOUNDARY_TILE_I=64 -DBOUNDARY_TILE_J=16 -DBOUNDARY_TILE_K=16 -DUSE_MPI=1   -Ofast -march=native -lm                 <source>"
+C: CC="mpicc"
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-Ispecmpitime -DUSE_BICGSTAB=1 -DUSE_SUBCOMM=1 -DUSE_FCYCLES=1 -DUSE_GSRB=1 -DBLOCKCOPY_TILE_I=32 -DBLOCKCOPY_TILE_J=4 -DBLOCKCOPY_TILE_K=16 -DBOUNDARY_TILE_I=64 -DBOUNDARY_TILE_J=16 -DBOUNDARY_TILE_K=16 -DUSE_MPI=1"
+P: BENCH_CFLAGS=""
+O: OPTIMIZE=""
+O: COPTIMIZE="-Ofast -march=native -lm"
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_CPORTABILITY=""
+LINK: "mpicc       -Ofast -march=native -lm         <objects>   -lm         -o options  "
+C: LD="mpicc"
+O: COPTIMIZE="-Ofast -march=native -lm"
+C: MATH_LIBS="-lm"
+C: LDOUT="-o options"
+
+ CC_VERSION_OPTION:
+
+gcc (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 834.hpgmgfv_l base gnu_mpi
+
+------------------------------------------------------------------------
+
+FPP: "specpp -DSPEC -DNDEBUG <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY=""
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "mpif90 -c -o options.o -Ofast -march=native -fno-stack-protector -ffree-line-length-none <source>"
+C: FC="mpif90"
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE=""
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: PORTABILITY=""
+P: FPORTABILITY="-ffree-line-length-none"
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+LINK: "mpif90       -Ofast -march=native -fno-stack-protector     -ffree-line-length-none    <objects>            -o options  "
+C: LD="mpif90"
+O: FOPTIMIZE="-Ofast -march=native -fno-stack-protector"
+P: FPORTABILITY="-ffree-line-length-none"
+C: LDOUT="-o options"
+
+ FC_VERSION_OPTION:
+
+GNU Fortran (GCC) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+  Up to date 835.weather_l base gnu_mpi
+
+
+Setting Up Run Directories
+  Setting up 805.lbm_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+  Setting up 818.tealeaf_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+  Setting up 819.clvleaf_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+  Setting up 828.pot3d_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+  Setting up 834.hpgmgfv_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+  Setting up 835.weather_l ref base gnu_mpi: run_base_ref_gnu_mpi.0000
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running (#1) 805.lbm_l ref base gnu_mpi [2024-03-04 00:38:49]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000
+    -o lbm.out -e lbm.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/lbm_base.gnu_mpi (timed)
+**WARNING: environment variable 'BASH_FUNC_ml()' contains embedded CR or LF; they will be converted to spaces
+**WARNING: environment variable 'BASH_FUNC_module()' contains embedded CR or LF; they will be converted to spaces
+**WARNING: environment variable 'BASH_FUNC_sbatch()' contains embedded CR or LF; they will be converted to spaces
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 00:38:49 (1709530729.74791)
+Stop command: 2024-03-04 01:32:02 (1709533922.85765)
+Elapsed time for command: 00:53:13 (3193.10974001884)
+Workload elapsed time (copy 0 workload 1) = 3192.950135 seconds
+Copy 0 of 805.lbm_l (base ref) run 1 finished at 2024-03-04 01:32:02.  Total elapsed time: 3192.950135
+Time Details
+Overall Time: 00:53:12.950238
+	Launch Overhead Time: 00:00:07.678612
+	    Application Time: 00:53:05.271626
+		Application Init Time:  00:00:02.633297
+		Application Core Time:  00:53:02.611913
+		Application Resid Time: 00:00:00.026415
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'lbm.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 01:32:02 (1709533922.91473)
+Stop command: 2024-03-04 01:32:03 (1709533923.23789)
+Elapsed time for command: 00:00:00 (0.323162078857422)
+Benchmark Times:
+  Run Start:    2024-03-04 00:38:49 (1709530729)
+  Run Stop:     2024-03-04 01:32:02 (1709533922)
+  Run Elapsed:  00:53:13 (3193)
+  Run Reported: 00:53:12 (3192 950239000 3192.950239)
+ Success 805.lbm_l base ref ratio=0.85, runtime=3192.950239, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#1) 818.tealeaf_l ref base gnu_mpi [2024-03-04 01:32:03]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000
+    -o output -e tea.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/tealeaf_base.gnu_mpi (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 01:32:03 (1709533923.37033)
+Stop command: 2024-03-04 01:55:59 (1709535359.30943)
+Elapsed time for command: 00:23:55 (1435.93910598755)
+Workload elapsed time (copy 0 workload 1) = 1435.777793 seconds
+Copy 0 of 818.tealeaf_l (base ref) run 1 finished at 2024-03-04 01:55:59.  Total elapsed time: 1435.777793
+Time Details
+Overall Time: 00:23:55.777900
+	Launch Overhead Time: 00:00:03.968269
+	    Application Time: 00:23:51.809630
+		Application Init Time:  00:00:00.363950
+		Application Core Time:  00:23:51.418998
+		Application Resid Time: 00:00:00.026682
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'tea.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 01:55:59 (1709535359.37082)
+Stop command: 2024-03-04 01:55:59 (1709535359.66619)
+Elapsed time for command: 00:00:00 (0.295361995697021)
+Benchmark Times:
+  Run Start:    2024-03-04 01:32:03 (1709533923)
+  Run Stop:     2024-03-04 01:55:59 (1709535359)
+  Run Elapsed:  00:23:56 (1436)
+  Run Reported: 00:23:55 (1435 777900000 1435.7779)
+ Success 818.tealeaf_l base ref ratio=1.01, runtime=1435.777900, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#1) 819.clvleaf_l ref base gnu_mpi [2024-03-04 01:55:59]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000
+    -e clover.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/clvleaf_base.gnu_mpi (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 01:55:59 (1709535359.84473)
+Stop command: 2024-03-04 02:28:30 (1709537310.43392)
+Elapsed time for command: 00:32:30 (1950.58918690681)
+Workload elapsed time (copy 0 workload 1) = 1950.430152 seconds
+Copy 0 of 819.clvleaf_l (base ref) run 1 finished at 2024-03-04 02:28:30.  Total elapsed time: 1950.430152
+Time Details
+Overall Time: 00:32:30.430264
+	Launch Overhead Time: 00:00:04.148517
+	    Application Time: 00:32:26.281747
+		Application Init Time:  00:00:01.523637
+		Application Core Time:  00:32:24.758108
+		Application Resid Time: 00:00:00.000001
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'clover.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 02:28:30 (1709537310.71195)
+Stop command: 2024-03-04 02:28:31 (1709537311.0814)
+Elapsed time for command: 00:00:00 (0.369446039199829)
+Benchmark Times:
+  Run Start:    2024-03-04 01:55:59 (1709535359)
+  Run Stop:     2024-03-04 02:28:30 (1709537310)
+  Run Elapsed:  00:32:31 (1951)
+  Run Reported: 00:32:30 (1950 430265000 1950.430265)
+ Success 819.clvleaf_l base ref ratio=1.08, runtime=1950.430265, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#1) 828.pot3d_l ref base gnu_mpi [2024-03-04 02:28:31]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000
+    -o pot3d.stdout.out -e pot3d.stderr.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/pot3d_base.gnu_mpi 1 (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 02:28:31 (1709537311.60985)
+Stop command: 2024-03-04 03:46:24 (1709541984.52136)
+Elapsed time for command: 01:17:52 (4672.91151499748)
+Workload elapsed time (copy 0 workload 1) = 4672.752119 seconds
+Copy 0 of 828.pot3d_l (base ref) run 1 finished at 2024-03-04 03:46:24.  Total elapsed time: 4672.752119
+Time Details
+Overall Time: 01:17:52.752233
+	Launch Overhead Time: 00:00:03.426493
+	    Application Time: 01:17:49.325740
+		Application Init Time:  00:00:06.222622
+		Application Core Time:  01:17:43.011979
+		Application Resid Time: 00:00:00.091137
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'pot3d1.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 03:46:24 (1709541984.56265)
+Stop command: 2024-03-04 03:46:24 (1709541984.94907)
+Elapsed time for command: 00:00:00 (0.38642406463623)
+Benchmark Times:
+  Run Start:    2024-03-04 02:28:31 (1709537311)
+  Run Stop:     2024-03-04 03:46:24 (1709541984)
+  Run Elapsed:  01:17:53 (4673)
+  Run Reported: 01:17:52 (4672 752234000 4672.752234)
+ Success 828.pot3d_l base ref ratio=0.97, runtime=4672.752234, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#1) 834.hpgmgfv_l ref base gnu_mpi [2024-03-04 03:46:25]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000
+    -o hpgmgfv.out -e hpgmgfv.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/hpgmgfv_base.gnu_mpi 5 12 150 (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 03:46:25 (1709541985.78337)
+Stop command: 2024-03-04 04:21:52 (1709544112.40462)
+Elapsed time for command: 00:35:26 (2126.62125706673)
+Workload elapsed time (copy 0 workload 1) = 2126.459404 seconds
+Copy 0 of 834.hpgmgfv_l (base ref) run 1 finished at 2024-03-04 04:21:52.  Total elapsed time: 2126.459404
+Time Details
+Overall Time: 00:35:26.459518
+	Launch Overhead Time: 00:00:03.430434
+	    Application Time: 00:35:23.029083
+		Application Init Time:  00:00:58.348744
+		Application Core Time:  00:34:09.859051
+		Application Resid Time: 00:00:14.821287
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'hpgmgfv.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 04:21:52 (1709544112.5594)
+Stop command: 2024-03-04 04:21:52 (1709544112.90428)
+Elapsed time for command: 00:00:00 (0.344871997833252)
+Benchmark Times:
+  Run Start:    2024-03-04 03:46:25 (1709541985)
+  Run Stop:     2024-03-04 04:21:52 (1709544112)
+  Run Elapsed:  00:35:27 (2127)
+  Run Reported: 00:35:26 (2126 459518000 2126.459518)
+ Success 834.hpgmgfv_l base ref ratio=1.58, runtime=2126.459518, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#1) 835.weather_l ref base gnu_mpi [2024-03-04 04:21:53]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000
+    -o weather.1.stdout.out -e weather.1.stderr.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/weather_base.gnu_mpi output6.ref.txt 5000000 10000 625000 1250 600 100 6 ; (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 04:21:53 (1709544113.05841)
+Stop command: 2024-03-04 05:14:35 (1709547275.5765)
+Elapsed time for command: 00:52:42 (3162.51808786392)
+Workload elapsed time (copy 0 workload 1) = 3162.356763 seconds
+Copy 0 of 835.weather_l (base ref) run 1 finished at 2024-03-04 05:14:35.  Total elapsed time: 3162.356763
+Time Details
+Overall Time: 00:52:42.356874
+	Launch Overhead Time: 00:00:12.950834
+	    Application Time: 00:52:29.406039
+		Application Init Time:  00:00:00.000002
+		Application Core Time:  00:52:29.406035
+		Application Resid Time: 00:00:00.000001
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'output6.ref.txt' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 05:14:35 (1709547275.71149)
+Stop command: 2024-03-04 05:14:37 (1709547277.2552)
+Elapsed time for command: 00:00:01 (1.54370713233948)
+Benchmark Times:
+  Run Start:    2024-03-04 04:21:53 (1709544113)
+  Run Stop:     2024-03-04 05:14:35 (1709547275)
+  Run Elapsed:  00:52:42 (3162)
+  Run Reported: 00:52:42 (3162 356874000 3162.356874)
+ Success 835.weather_l base ref ratio=1.08, runtime=3162.356874, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 805.lbm_l ref base gnu_mpi [2024-03-04 05:14:37]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000
+    -o lbm.out -e lbm.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/lbm_base.gnu_mpi (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 05:14:37 (1709547277.35896)
+Stop command: 2024-03-04 06:05:06 (1709550306.13686)
+Elapsed time for command: 00:50:28 (3028.77790093422)
+Workload elapsed time (copy 0 workload 1) = 3028.618692 seconds
+Copy 0 of 805.lbm_l (base ref) run 2 finished at 2024-03-04 06:05:05.  Total elapsed time: 3028.618692
+Time Details
+Overall Time: 00:50:28.618801
+	Launch Overhead Time: 00:00:04.202818
+	    Application Time: 00:50:24.415982
+		Application Init Time:  00:00:02.544042
+		Application Core Time:  00:50:21.851907
+		Application Resid Time: 00:00:00.020032
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'lbm.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/805.lbm_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 06:05:06 (1709550306.17647)
+Stop command: 2024-03-04 06:05:06 (1709550306.47174)
+Elapsed time for command: 00:00:00 (0.295269012451172)
+Benchmark Times:
+  Run Start:    2024-03-04 05:14:37 (1709547277)
+  Run Stop:     2024-03-04 06:05:06 (1709550306)
+  Run Elapsed:  00:50:29 (3029)
+  Run Reported: 00:50:28 (3028 618801000 3028.618801)
+ Success 805.lbm_l base ref ratio=0.90, runtime=3028.618801, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 818.tealeaf_l ref base gnu_mpi [2024-03-04 06:05:06]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000
+    -o output -e tea.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/tealeaf_base.gnu_mpi (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 06:05:06 (1709550306.57298)
+Stop command: 2024-03-04 06:29:00 (1709551740.77583)
+Elapsed time for command: 00:23:54 (1434.20284700394)
+Workload elapsed time (copy 0 workload 1) = 1434.042692 seconds
+Copy 0 of 818.tealeaf_l (base ref) run 2 finished at 2024-03-04 06:29:00.  Total elapsed time: 1434.042692
+Time Details
+Overall Time: 00:23:54.042795
+	Launch Overhead Time: 00:00:02.604864
+	    Application Time: 00:23:51.437931
+		Application Init Time:  00:00:00.356726
+		Application Core Time:  00:23:51.056524
+		Application Resid Time: 00:00:00.024679
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'tea.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/818.tealeaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 06:29:00 (1709551740.81557)
+Stop command: 2024-03-04 06:29:01 (1709551741.10736)
+Elapsed time for command: 00:00:00 (0.291795969009399)
+Benchmark Times:
+  Run Start:    2024-03-04 06:05:06 (1709550306)
+  Run Stop:     2024-03-04 06:29:00 (1709551740)
+  Run Elapsed:  00:23:54 (1434)
+  Run Reported: 00:23:54 (1434 42796000 1434.042796)
+ Success 818.tealeaf_l base ref ratio=1.01, runtime=1434.042796, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 819.clvleaf_l ref base gnu_mpi [2024-03-04 06:29:01]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000
+    -e clover.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/clvleaf_base.gnu_mpi (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 06:29:01 (1709551741.23299)
+Stop command: 2024-03-04 07:01:28 (1709553688.63635)
+Elapsed time for command: 00:32:27 (1947.40336203575)
+Workload elapsed time (copy 0 workload 1) = 1947.243154 seconds
+Copy 0 of 819.clvleaf_l (base ref) run 2 finished at 2024-03-04 07:01:28.  Total elapsed time: 1947.243154
+Time Details
+Overall Time: 00:32:27.243267
+	Launch Overhead Time: 00:00:03.440207
+	    Application Time: 00:32:23.803060
+		Application Init Time:  00:00:01.677600
+		Application Core Time:  00:32:22.125458
+		Application Resid Time: 00:00:00.000001
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'clover.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/819.clvleaf_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 07:01:28 (1709553688.67631)
+Stop command: 2024-03-04 07:01:28 (1709553688.99574)
+Elapsed time for command: 00:00:00 (0.319433927536011)
+Benchmark Times:
+  Run Start:    2024-03-04 06:29:01 (1709551741)
+  Run Stop:     2024-03-04 07:01:28 (1709553688)
+  Run Elapsed:  00:32:27 (1947)
+  Run Reported: 00:32:27 (1947 243268000 1947.243268)
+ Success 819.clvleaf_l base ref ratio=1.08, runtime=1947.243268, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 828.pot3d_l ref base gnu_mpi [2024-03-04 07:01:29]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000
+    -o pot3d.stdout.out -e pot3d.stderr.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/pot3d_base.gnu_mpi 1 (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 07:01:29 (1709553689.42289)
+Stop command: 2024-03-04 08:19:26 (1709558366.55541)
+Elapsed time for command: 01:17:57 (4677.1325199604)
+Workload elapsed time (copy 0 workload 1) = 4676.973585 seconds
+Copy 0 of 828.pot3d_l (base ref) run 2 finished at 2024-03-04 08:19:26.  Total elapsed time: 4676.973585
+Time Details
+Overall Time: 01:17:56.973710
+	Launch Overhead Time: 00:00:02.753019
+	    Application Time: 01:17:54.220690
+		Application Init Time:  00:00:07.031673
+		Application Core Time:  01:17:47.098331
+		Application Resid Time: 00:00:00.090685
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'pot3d1.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/828.pot3d_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 08:19:26 (1709558366.59734)
+Stop command: 2024-03-04 08:19:26 (1709558366.96374)
+Elapsed time for command: 00:00:00 (0.366406917572021)
+Benchmark Times:
+  Run Start:    2024-03-04 07:01:29 (1709553689)
+  Run Stop:     2024-03-04 08:19:26 (1709558366)
+  Run Elapsed:  01:17:57 (4677)
+  Run Reported: 01:17:56 (4676 973710000 4676.97371)
+ Success 828.pot3d_l base ref ratio=0.97, runtime=4676.973710, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 834.hpgmgfv_l ref base gnu_mpi [2024-03-04 08:19:27]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000
+    -o hpgmgfv.out -e hpgmgfv.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/hpgmgfv_base.gnu_mpi 5 12 150 (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 08:19:27 (1709558367.10952)
+Stop command: 2024-03-04 08:54:51 (1709560491.52689)
+Elapsed time for command: 00:35:24 (2124.41737294197)
+Workload elapsed time (copy 0 workload 1) = 2124.2574 seconds
+Copy 0 of 834.hpgmgfv_l (base ref) run 2 finished at 2024-03-04 08:54:51.  Total elapsed time: 2124.2574
+Time Details
+Overall Time: 00:35:24.257506
+	Launch Overhead Time: 00:00:04.243583
+	    Application Time: 00:35:20.013923
+		Application Init Time:  00:00:58.122645
+		Application Core Time:  00:34:07.745848
+		Application Resid Time: 00:00:14.145429
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'hpgmgfv.out' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/834.hpgmgfv_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 08:54:51 (1709560491.56635)
+Stop command: 2024-03-04 08:54:51 (1709560491.88887)
+Elapsed time for command: 00:00:00 (0.322525024414062)
+Benchmark Times:
+  Run Start:    2024-03-04 08:19:27 (1709558367)
+  Run Stop:     2024-03-04 08:54:51 (1709560491)
+  Run Elapsed:  00:35:24 (2124)
+  Run Reported: 00:35:24 (2124 257507000 2124.257507)
+ Success 834.hpgmgfv_l base ref ratio=1.58, runtime=2124.257507, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+
+-----------------------------------
+  Running (#2) 835.weather_l ref base gnu_mpi [2024-03-04 08:54:51]
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+Commands to run (specinvoke command file):
+    -N C
+    -C /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000
+    -o weather.1.stdout.out -e weather.1.stderr.err mpirun --bind-to none -v -np 4096 ../run_base_ref_gnu_mpi.0000/weather_base.gnu_mpi output6.ref.txt 5000000 10000 625000 1250 600 100 6 ; (timed)
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Start command: 2024-03-04 08:54:52 (1709560492.01653)
+Stop command: 2024-03-04 09:47:27 (1709563647.88653)
+Elapsed time for command: 00:52:35 (3155.87000107765)
+Workload elapsed time (copy 0 workload 1) = 3155.709623 seconds
+Copy 0 of 835.weather_l (base ref) run 2 finished at 2024-03-04 09:47:27.  Total elapsed time: 3155.709623
+Time Details
+Overall Time: 00:52:35.709738
+	Launch Overhead Time: 00:00:12.074662
+	    Application Time: 00:52:23.635075
+		Application Init Time:  00:00:00.000002
+		Application Core Time:  00:52:23.635071
+		Application Resid Time: 00:00:00.000000
+OpenMP/OpenACC environment variables removed: None
+OpenMP/OpenACC environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	ACC_NUM_CORES	=> '1'
+Pre-run environment changes:
+	'ACC_NUM_CORES' added: (value now '1')
+	'OMP_NUM_THREADS' added: (value now '1')
+comparing 'output6.ref.txt' with abstol=4e-07, reltol=0.006
+Specinvoke: /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+/scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/bin/specinvoke -d /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/benchspec/HPC/835.weather_l/run/run_base_ref_gnu_mpi.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Start command: 2024-03-04 09:47:28 (1709563648.09513)
+Stop command: 2024-03-04 09:47:28 (1709563648.48197)
+Elapsed time for command: 00:00:00 (0.386841058731079)
+Benchmark Times:
+  Run Start:    2024-03-04 08:54:52 (1709560492)
+  Run Stop:     2024-03-04 09:47:27 (1709563647)
+  Run Elapsed:  00:52:35 (3155)
+  Run Reported: 00:52:35 (3155 709738000 3155.709738)
+ Success 835.weather_l base ref ratio=1.09, runtime=3155.709738, pmodel=MPI, ranks=4096, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+Success: 2x805.lbm_l 2x818.tealeaf_l 2x819.clvleaf_l 2x828.pot3d_l 2x834.hpgmgfv_l 2x835.weather_l
+Producing Raw Reports
+ label: gnu_mpi
+  workload: ref
+   benchset: tiny
+   benchset: small
+   benchset: medium
+   benchset: large
+   metric: SPEChpc2021_lrg_base
+    format: raw -> /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/result/hpc2021_lrg.016.large.rsf
+Parsing flags for 805.lbm_l base: done
+Parsing flags for 818.tealeaf_l base: done
+Parsing flags for 819.clvleaf_l base: done
+Parsing flags for 828.pot3d_l base: done
+Parsing flags for 834.hpgmgfv_l base: done
+Parsing flags for 835.weather_l base: done
+Doing flag reduction: done
+    format: Text -> /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/result/hpc2021_lrg.016.large.txt
+
+The log for this run is in /scratch/path/to/SPEC/gcc_11.3.0_openmpi_4.1.4_ucx-1.11.2/hpc2021/result/hpc2021.016.log
+
+runhpc finished at 2024-03-04 09:47:30; 32966 total seconds elapsed
