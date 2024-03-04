@@ -13,7 +13,7 @@ How to Run the Benchmark
  1. Get version 3.0b6 of the NAMD application.
     Main source and pre-built binaries can be found at:
 
-      http://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
+      https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
       (md5sum: 98764e65e1b3957e67fe09f3b94e8782)
 
     One needs to register to get the code or binaries.
@@ -25,20 +25,20 @@ How to Run the Benchmark
  
  3. The code can be compiled following the instructions here:
 
-    https://www.ks.uiuc.edu/Development/Download/download.cgi
+    https://www.ks.uiuc.edu/Research/namd/development.html
 
     There is a list of commands that were run to build NAMD on Niagara
     in the "build_namd.sh" file. Note two versions (--with-memopt and without)
     need to be compiled in order to generate and run the input files.
  
- 4. The benchmark input files are from http://www.ks.uiuc.edu/Research/namd/benchmarks/ and
-    can be downloaded from
+ 4. The benchmark input files are from https://www.ks.uiuc.edu/Research/namd/benchmarks/
+    and can be downloaded from
 
-      http://www.ks.uiuc.edu/Research/namd/utilities/stmv.tar.gz
+      https://www.ks.uiuc.edu/Research/namd/utilities/stmv.tar.gz
 
     and
 
-      http://www.ks.uiuc.edu/Research/namd/utilities/stmv_sc14.tar.gz
+      https://www.ks.uiuc.edu/Research/namd/utilities/stmv_sc14.tar.gz
 
     These files can also be found in the benchmark directory, under
     "benchmark/stmv.tar.gz" and "benchmark/stmv_sc14.tar.gz".
@@ -83,7 +83,7 @@ How to Run the Benchmark
     mpirun will launch on a set number of nodes, with as many
     processes per node as it has cores.  Alternatively, one can pass a
     ++nodelist command. Details of this way of starting a namd run are
-    described in http://www.ks.uiuc.edu/Research/namd/3.0/notes.html.
+    described in https://www.ks.uiuc.edu/Research/namd/3.0/notes.html.
 
     Note a SLURM script has been included in the benchmark directory
     called "submit.slurm" that was used to run the reference benchmark
