@@ -7,7 +7,7 @@
   See [configure.wrf.niagara](configure.wrf.niagara) for our configuration.
   In particular, we added `-DRSL0_ONLY` to `CFLAGS_LOCAL`.
 - `./compile -j xxx em_real`
-- Download and unpack the benchmark data [`scinet-lp2bm-wrf-data.tar.gz`](https://rfp2024.scinet.utoronto.ca/download.php?id=6&token=hCcKdTeqGESdumZYsQ6r0wxVGm1Sexfw&download) [^2].
+- Download and unpack the benchmark data [`scinet-lp2bm-wrf-data.tar.gz`](https://rfp2024.scinet.utoronto.ca/download.php?id=13&token=eMb5X9YuG2jLu8DDPNRPoqwBYoRNuM3P&download) [^2].
 - `cd scinet-lp2bm-wrf-data/benchmark`
 - Link in the `run` files from WRF:
   ```bash
