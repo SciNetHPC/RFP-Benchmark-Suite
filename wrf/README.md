@@ -1,13 +1,13 @@
 # WRF Benchmark
 
 - This is a lightly modified version of the [NCAR 2019/2020 procurement WRF benchmark](https://arc.ucar.edu/knowledge_base/81887359).
-  The data files are identical.
+  The data files and validation scripts are identical.
 - Download WRFv4 and configure as desired.
   On niagara we used [v4.5.2](https://github.com/wrf-model/WRF/releases/download/v4.5.2/v4.5.2.tar.gz) [^1].
   See [configure.wrf.niagara](configure.wrf.niagara) for our configuration.
   In particular, we added `-DRSL0_ONLY` to `CFLAGS_LOCAL`.
 - `./compile -j xxx em_real`
-- Download and unpack the [benchmark data](https://rfp2024.scinet.utoronto.ca/scinet-lp2bm-wrf-data.tar.gz) [^2].
+- Download and unpack the benchmark data [`scinet-lp2bm-wrf-data.tar.gz`](https://rfp2024.scinet.utoronto.ca/download.php?id=6&token=hCcKdTeqGESdumZYsQ6r0wxVGm1Sexfw&download) [^2].
 - `cd scinet-lp2bm-wrf-data/benchmark`
 - Link in the `run` files from WRF:
   ```bash
